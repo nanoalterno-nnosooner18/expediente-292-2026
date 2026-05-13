@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Su expediente en el tiempo ÃÂÃÂ· 292/2026</title>
+<title>Su expediente en el tiempo · 292/2026</title>
 <style>
   :root {
     --bg-deep: #000005;
@@ -94,7 +94,7 @@
   .ficha-table th { text-align: left; padding: 10px 14px; background: rgba(170,212,255, 0.1); color: var(--ink); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; border-left: 2px solid var(--ice); width: 38%; }
   .ficha-table td { padding: 10px 14px; background: rgba(20, 32, 70, 0.6); color: var(--ink-soft); font-size: 13.5px; line-height: 1.45; }
 
-  /* Indicador "USTED ESTÃÂÃÂ AQUÃÂÃÂ" en panel actual */
+  /* Indicador "USTED ESTÁ AQUÍ" en panel actual */
   #youAreHere { position: fixed; pointer-events: none; z-index: 24; padding: 6px 14px; background: linear-gradient(135deg, #ffb84d, #d4af37); color: #1a1208; font-weight: 800; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 100px; box-shadow: 0 6px 20px rgba(212,175,55,0.5), 0 0 30px rgba(255,184,77,0.5); opacity: 0; transition: opacity 0.4s; white-space: nowrap; }
   #youAreHere.show { opacity: 1; animation: bounceHere 2s ease-in-out infinite; }
   #youAreHere::after { content: ''; position: absolute; left: 50%; bottom: -7px; transform: translateX(-50%); width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 7px solid #d4af37; }
@@ -106,9 +106,8 @@
   #btnPrintBig svg{width:18px;height:18px;stroke:#1a0e2e;fill:none;stroke-width:2.2}
   @keyframes btnPrintGlow{from{box-shadow:0 0 0 1px rgba(255,184,77,.4),0 4px 18px rgba(255,184,77,.4),0 0 30px rgba(255,224,102,.3);transform:scale(1)}to{box-shadow:0 0 0 2px rgba(255,224,102,.7),0 10px 36px rgba(255,184,77,.85),0 0 70px rgba(255,224,102,.7);transform:scale(1.04)}}
   @media(max-width:480px){#btnPrintBig{padding:8px 14px 8px 12px;font-size:10.5px;gap:6px;letter-spacing:.1em}#btnPrintBig svg{width:15px;height:15px}}
-  /* Vista imprimible ÃÂ¢ÃÂÃÂ oculta normalmente */
+  /* Vista imprimible — oculta normalmente */
   #printable { display: none; }
-  @media print{html,body{overflow:visible!important;height:auto!important;width:auto!important;background:#fff!important;position:static!important}#app,#loader,#welcome,#topbar,#hintTL,#youAreHere,#modal,#calendar,#ficha,canvas{display:none!important}#printable{position:static!important;display:block!important}#printable .pcover{page-break-before:auto!important;break-before:auto!important;page-break-after:always!important;break-after:page!important}#printable .pstage{page-break-before:always!important;break-before:page!important;page-break-inside:avoid!important;break-inside:avoid-page!important}#printable .panexo-block{page-break-before:always!important;break-before:page!important}}
   @media print {
     @page { size: A4; margin: 18mm 16mm; }
     body > *:not(#printable) { display: none !important; }
@@ -190,7 +189,7 @@
 </div>
 
 <div id="topbar">
-  <div class="brand">EXPEDIENTE 292/2026<small>Juzgado 8ÃÂÃÂº Familiar ÃÂÃÂ· CDMX</small></div>
+  <div class="brand">EXPEDIENTE 292/2026<small>Juzgado 8º Familiar · CDMX</small></div>
   <div class="topbtns">
     <button class="iconbtn" id="btnFicha" title="Ficha del expediente">
       <svg viewBox="0 0 24 24"><path d="M5 4h14a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
@@ -206,31 +205,31 @@
 
 <div id="welcome">
   <div class="welcome-card">
-    <div class="welcome-greeting">Su expediente lo estÃÂÃÂ¡ esperando</div>
+    <div class="welcome-greeting">Su expediente lo está esperando</div>
     <div class="welcome-title">14 momentos del tiempo</div>
-    <div class="welcome-sub">AquÃÂÃÂ­, su sucesiÃÂÃÂ³n se descompone en 14 piezas flotantes. TÃÂÃÂ³quelas para ver quÃÂÃÂ© pasÃÂÃÂ³, quÃÂÃÂ© falta y quÃÂÃÂ© sigue. Gire la vista como quiera ÃÂ¢ÃÂÃÂ el tiempo no manda aquÃÂÃÂ­.</div>
+    <div class="welcome-sub">Aquí, su sucesión se descompone en 14 piezas flotantes. Tóquelas para ver qué pasó, qué falta y qué sigue. Gire la vista como quiera — el tiempo no manda aquí.</div>
     <button class="btn-primary" id="btnOpen">Entrar al teseracto</button>
   </div>
 </div>
 
-<div id="hintTL"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 16 0M4 12l3-3M4 12l3 3"/></svg>Arrastre para girar ÃÂÃÂ· pellizque para acercar ÃÂÃÂ· toque un panel</div>
-<div id="youAreHere">AquÃÂÃÂ­ va su expediente hoy</div>
+<div id="hintTL"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 16 0M4 12l3-3M4 12l3 3"/></svg>Arrastre para girar · pellizque para acercar · toque un panel</div>
+<div id="youAreHere">Aquí va su expediente hoy</div>
 
 <div id="printable"></div>
 
 <div id="modal">
   <div class="modal-box">
-    <button class="modal-close" id="modalClose">ÃÂÃÂ</button>
+    <button class="modal-close" id="modalClose">×</button>
     <div class="stage-num"><span class="badge" id="mBadge">1</span><span id="mStageNum">Etapa 1 de 14</span></div>
-    <div class="stage-title" id="mTitle">ÃÂ¢ÃÂÃÂ</div>
-    <div class="stage-date"><span id="mDate">ÃÂ¢ÃÂÃÂ</span><span class="stage-state-tag" id="mState">ÃÂ¢ÃÂÃÂ</span></div>
+    <div class="stage-title" id="mTitle">—</div>
+    <div class="stage-date"><span id="mDate">—</span><span class="stage-state-tag" id="mState">—</span></div>
     <div id="mImgWrap"></div>
-    <div class="stage-body" id="mBody">ÃÂ¢ÃÂÃÂ</div>
+    <div class="stage-body" id="mBody">—</div>
     <div class="stage-meta"><strong>Lo que dice la ley</strong><span id="mFundamento"></span></div>
     <div class="stage-meta"><strong>Antecedente que ayuda</strong><span id="mJurisprudencia"></span></div>
     <div class="stage-nav">
-      <button id="mPrev">ÃÂ¢ÃÂÃÂ¹ Anterior</button>
-      <button id="mNext">Siguiente ÃÂ¢ÃÂÃÂº</button>
+      <button id="mPrev">‹ Anterior</button>
+      <button id="mNext">Siguiente ›</button>
     </div>
   </div>
 </div>
@@ -239,10 +238,10 @@
   <div class="cal-box">
     <div style="display:flex;justify-content:space-between;align-items:flex-start">
       <div>
-        <div class="cal-title">LÃÂÃÂ­nea del tiempo</div>
-        <div class="cal-sub">14 ETAPAS ÃÂÃÂ· EXPEDIENTE 292/2026</div>
+        <div class="cal-title">Línea del tiempo</div>
+        <div class="cal-sub">14 ETAPAS · EXPEDIENTE 292/2026</div>
       </div>
-      <button class="modal-close" id="calClose" style="position:static">ÃÂÃÂ</button>
+      <button class="modal-close" id="calClose" style="position:static">×</button>
     </div>
     <div class="cal-list" id="calList"></div>
   </div>
@@ -253,20 +252,20 @@
     <div style="display:flex;justify-content:space-between;align-items:flex-start">
       <div>
         <div class="cal-title">Su expediente</div>
-        <div class="cal-sub">INFORMACIÃÂÃÂN OFICIAL</div>
+        <div class="cal-sub">INFORMACIÓN OFICIAL</div>
       </div>
-      <button class="modal-close" id="fichaClose" style="position:static">ÃÂÃÂ</button>
+      <button class="modal-close" id="fichaClose" style="position:static">×</button>
     </div>
     <table class="ficha-table">
-      <tr><th>NÃÂÃÂºmero</th><td>292/2026</td></tr>
-      <tr><th>Juzgado</th><td>Octavo de lo Familiar de la Ciudad de MÃÂÃÂ©xico</td></tr>
-      <tr><th>Tipo</th><td>SucesiÃÂÃÂ³n sin testamento, de los dos padres</td></tr>
-      <tr><th>Quien lo presentÃÂÃÂ³</th><td>Sr. Arturo Espejel LÃÂÃÂ³pez, hijo</td></tr>
-      <tr><th>PapÃÂÃÂ¡</th><td>Sr. Arturo Espejel Padilla ÃÂ¢ÃÂÃÂ falleciÃÂÃÂ³ el 24 de enero de 2026</td></tr>
-      <tr><th>MamÃÂÃÂ¡</th><td>Sra. Mariana LÃÂÃÂ³pez Vargas ÃÂ¢ÃÂÃÂ falleciÃÂÃÂ³ el 6 de agosto de 2025</td></tr>
-      <tr><th>Hermanos</th><td>Cynthia Esmeralda y Juan Luis ÃÂ¢ÃÂÃÂ ambos manifestaron que ceden su parte al promovente</td></tr>
+      <tr><th>Número</th><td>292/2026</td></tr>
+      <tr><th>Juzgado</th><td>Octavo de lo Familiar de la Ciudad de México</td></tr>
+      <tr><th>Tipo</th><td>Sucesión sin testamento, de los dos padres</td></tr>
+      <tr><th>Quien lo presentó</th><td>Sr. Arturo Espejel López, hijo</td></tr>
+      <tr><th>Papá</th><td>Sr. Arturo Espejel Padilla — falleció el 24 de enero de 2026</td></tr>
+      <tr><th>Mamá</th><td>Sra. Mariana López Vargas — falleció el 6 de agosto de 2025</td></tr>
+      <tr><th>Hermanos</th><td>Cynthia Esmeralda y Juan Luis — ambos manifestaron que ceden su parte al promovente</td></tr>
       <tr><th>Fecha de entrega</th><td>7 de mayo de 2026 (acuse oficial)</td></tr>
-      <tr><th>Folio interno</th><td>INI/OPC/P1/PC187 ÃÂÃÂ· 329/07-05-2026</td></tr>
+      <tr><th>Folio interno</th><td>INI/OPC/P1/PC187 · 329/07-05-2026</td></tr>
     </table>
   </div>
 </div>
@@ -288,87 +287,87 @@ const IMG = {"buho_login": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkL
 const STAGES = [
   {
     n: 1, t: "Entregamos el expediente", date: "7 de mayo de 2026", state: "done", img: "acuse",
-    body: `<p>AquÃÂÃÂ­ empieza todo. Su expediente entrÃÂÃÂ³ oficialmente al sistema judicial. La OficialÃÂÃÂ­a lo recibiÃÂÃÂ³, le puso un folio y lo turnÃÂÃÂ³ al Juzgado 8ÃÂÃÂº Familiar.</p><p>A partir de este dÃÂÃÂ­a, todo lo que pasa con la sucesiÃÂÃÂ³n queda registrado bajo el nÃÂÃÂºmero 292/2026.</p>`,
-    fund: "El CÃÂÃÂ³digo de Procedimientos Civiles para la CDMX permite que un hijo abra el juicio de sucesiÃÂÃÂ³n cuando los padres no dejaron testamento (artÃÂÃÂ­culos 774, 778 y 799).",
-    juris: "La Suprema Corte ha dicho varias veces que el juicio sucesorio es la vÃÂÃÂ­a universal para acomodar los bienes de quien falleciÃÂÃÂ³ sin testamento."
+    body: `<p>Aquí empieza todo. Su expediente entró oficialmente al sistema judicial. La Oficialía lo recibió, le puso un folio y lo turnó al Juzgado 8º Familiar.</p><p>A partir de este día, todo lo que pasa con la sucesión queda registrado bajo el número 292/2026.</p>`,
+    fund: "El Código de Procedimientos Civiles para la CDMX permite que un hijo abra el juicio de sucesión cuando los padres no dejaron testamento (artículos 774, 778 y 799).",
+    juris: "La Suprema Corte ha dicho varias veces que el juicio sucesorio es la vía universal para acomodar los bienes de quien falleció sin testamento."
   },
   {
     n: 2, t: "El expediente toma forma", date: "Segunda semana de mayo", state: "now", img: "buho_resultado",
-    body: `<p>El Juzgado registra el caso en su libro de gobierno con el nÃÂÃÂºmero 292/2026 y abre el legajo. Ya consta en consulta pÃÂÃÂºblica.</p><p><strong>Al dÃÂÃÂ­a de hoy, todavÃÂÃÂ­a no existe acuerdo publicado del Juez.</strong> Esto es completamente normal en los primeros dÃÂÃÂ­as: el Juzgado revisa fÃÂÃÂ­sicamente el escrito y los anexos antes de pronunciarse formalmente. La radicaciÃÂÃÂ³n estÃÂÃÂ¡ confirmada y solo estamos esperando el primer acuerdo.</p>`,
+    body: `<p>El Juzgado registra el caso en su libro de gobierno con el número 292/2026 y abre el legajo. Ya consta en consulta pública.</p><p><strong>Al día de hoy, todavía no existe acuerdo publicado del Juez.</strong> Esto es completamente normal en los primeros días: el Juzgado revisa físicamente el escrito y los anexos antes de pronunciarse formalmente. La radicación está confirmada y solo estamos esperando el primer acuerdo.</p>`,
     fund: "Una vez recibido el escrito, el Juzgado tiene que registrar el asunto y emitir el primer acuerdo en un plazo prudente.",
-    juris: "La SCJN ha aclarado las reglas territoriales que determinan quÃÂÃÂ© juzgado conoce de cada sucesiÃÂÃÂ³n."
+    juris: "La SCJN ha aclarado las reglas territoriales que determinan qué juzgado conoce de cada sucesión."
   },
   {
     n: 3, t: "Primer acuerdo del Juez", date: "Tercera o cuarta semana de mayo", state: "pending",
-    body: `<p>El Juez emite su primer pronunciamiento: admite la denuncia, lo reconoce como promovente, da por designados a los abogados y ordena los siguientes pasos.</p><p>Si pide algÃÂÃÂºn detalle adicional, se atiende todo en una sola promociÃÂÃÂ³n posterior, sin dramatismos.</p>`,
-    fund: "El Juez puede pedir aclarar puntos concretos del escrito una sola vez (artÃÂÃÂ­culos 272-A y 272-G del CPCCDMX).",
-    juris: "Los tribunales han confirmado que esa facultad de aclarar se ejerce de una sola vez, sobre puntos especÃÂÃÂ­ficos, y el promovente puede responder en un solo escrito."
+    body: `<p>El Juez emite su primer pronunciamiento: admite la denuncia, lo reconoce como promovente, da por designados a los abogados y ordena los siguientes pasos.</p><p>Si pide algún detalle adicional, se atiende todo en una sola promoción posterior, sin dramatismos.</p>`,
+    fund: "El Juez puede pedir aclarar puntos concretos del escrito una sola vez (artículos 272-A y 272-G del CPCCDMX).",
+    juris: "Los tribunales han confirmado que esa facultad de aclarar se ejerce de una sola vez, sobre puntos específicos, y el promovente puede responder en un solo escrito."
   },
   {
-    n: 4, t: "Buscamos si hay testamento", date: "ÃÂÃÂltima semana de mayo a primera de junio", state: "pending",
-    body: `<p>Se libran oficios al Archivo de NotarÃÂÃÂ­as, al Archivo Judicial y al RENAT (registro nacional). El objetivo: confirmar que efectivamente no hay testamento que cambie el rumbo.</p><p>Sin este paso, la sucesiÃÂÃÂ³n sin testamento no se puede declarar de forma definitiva.</p>`,
-    fund: "ArtÃÂÃÂ­culo 801 del CPCCDMX y reglamento del RENAT.",
-    juris: "Es un paso obligatorio: si alguien despuÃÂÃÂ©s encuentra un testamento, el juicio se reabre."
+    n: 4, t: "Buscamos si hay testamento", date: "Última semana de mayo a primera de junio", state: "pending",
+    body: `<p>Se libran oficios al Archivo de Notarías, al Archivo Judicial y al RENAT (registro nacional). El objetivo: confirmar que efectivamente no hay testamento que cambie el rumbo.</p><p>Sin este paso, la sucesión sin testamento no se puede declarar de forma definitiva.</p>`,
+    fund: "Artículo 801 del CPCCDMX y reglamento del RENAT.",
+    juris: "Es un paso obligatorio: si alguien después encuentra un testamento, el juicio se reabre."
   },
   {
-    n: 5, t: "PublicaciÃÂÃÂ³n de edictos", date: "Primera a tercera semana de junio", state: "pending",
-    body: `<p>Se publican edictos en periÃÂÃÂ³dicos para que cualquier persona que crea tener derecho a la herencia se presente. Tiene 30 dÃÂÃÂ­as desde la ÃÂÃÂºltima publicaciÃÂÃÂ³n para hacerlo.</p><p>Suena exagerado, pero es lo que blinda la sentencia: si nadie aparece, despuÃÂÃÂ©s no pueden venir a reclamar.</p>`,
-    fund: "ArtÃÂÃÂ­culos 122, 804 y 805 del CPCCDMX.",
+    n: 5, t: "Publicación de edictos", date: "Primera a tercera semana de junio", state: "pending",
+    body: `<p>Se publican edictos en periódicos para que cualquier persona que crea tener derecho a la herencia se presente. Tiene 30 días desde la última publicación para hacerlo.</p><p>Suena exagerado, pero es lo que blinda la sentencia: si nadie aparece, después no pueden venir a reclamar.</p>`,
+    fund: "Artículos 122, 804 y 805 del CPCCDMX.",
     juris: "Sin edictos publicados conforme a la ley, la sentencia de herederos se cae si alguien la impugna."
   },
   {
-    n: 6, t: "Sus hermanos comparecen", date: "ÃÂÃÂltima quincena de junio", state: "pending",
-    body: `<p>Cynthia y Juan Luis se presentan ante el Juzgado y ratifican personalmente, con identificaciÃÂÃÂ³n oficial y bajo protesta de decir verdad, su decisiÃÂÃÂ³n de no quedarse con la parte que les podrÃÂÃÂ­a tocar.</p><p>Al hacerlo, esa parte se le suma a usted automÃÂÃÂ¡ticamente por mandato de la ley, sin necesidad de papeleo extra entre hermanos.</p>`,
-    fund: "ArtÃÂÃÂ­culos 1655 a 1670 del CÃÂÃÂ³digo Civil para la CDMX ÃÂ¢ÃÂÃÂ forma y efectos de no aceptar una herencia.",
-    juris: "La jurisprudencia es muy clara: cuando un heredero no acepta su parte, esa parte pasa a los demÃÂÃÂ¡s herederos del mismo nivel por automÃÂÃÂ¡tico, no por regalo."
+    n: 6, t: "Sus hermanos comparecen", date: "Última quincena de junio", state: "pending",
+    body: `<p>Cynthia y Juan Luis se presentan ante el Juzgado y ratifican personalmente, con identificación oficial y bajo protesta de decir verdad, su decisión de no quedarse con la parte que les podría tocar.</p><p>Al hacerlo, esa parte se le suma a usted automáticamente por mandato de la ley, sin necesidad de papeleo extra entre hermanos.</p>`,
+    fund: "Artículos 1655 a 1670 del Código Civil para la CDMX — forma y efectos de no aceptar una herencia.",
+    juris: "La jurisprudencia es muy clara: cuando un heredero no acepta su parte, esa parte pasa a los demás herederos del mismo nivel por automático, no por regalo."
   },
   {
-    n: 7, t: "Aclaramos cÃÂÃÂ³mo estaban casados sus papÃÂÃÂ¡s", date: "Primera quincena de julio", state: "pending",
-    body: `<p>AquÃÂÃÂ­ se determina el rÃÂÃÂ©gimen patrimonial de sus padres. Si estaban casados por sociedad conyugal, hay un paso previo: separar primero lo que era de cada uno antes de repartir.</p><p>Se exhibe el acta de matrimonio (o la constancia de que no habÃÂÃÂ­a matrimonio) y se aclara bajo protesta. Pasos limpios, sin sorpresas.</p>`,
-    fund: "ArtÃÂÃÂ­culos 178 a 206 y 1624 a 1626 del CÃÂÃÂ³digo Civil para la CDMX.",
-    juris: "La Suprema Corte exige que se aclare el rÃÂÃÂ©gimen antes de hacer el inventario; si no, todo lo demÃÂÃÂ¡s es atacable."
+    n: 7, t: "Aclaramos cómo estaban casados sus papás", date: "Primera quincena de julio", state: "pending",
+    body: `<p>Aquí se determina el régimen patrimonial de sus padres. Si estaban casados por sociedad conyugal, hay un paso previo: separar primero lo que era de cada uno antes de repartir.</p><p>Se exhibe el acta de matrimonio (o la constancia de que no había matrimonio) y se aclara bajo protesta. Pasos limpios, sin sorpresas.</p>`,
+    fund: "Artículos 178 a 206 y 1624 a 1626 del Código Civil para la CDMX.",
+    juris: "La Suprema Corte exige que se aclare el régimen antes de hacer el inventario; si no, todo lo demás es atacable."
   },
   {
-    n: 8, t: "El Juez lo declara heredero", date: "ÃÂÃÂltima semana de julio", state: "pending",
-    body: `<p>Con los pasos anteriores cerrados, el Juez emite la primera sentencia importante: lo reconoce como ÃÂÃÂºnico heredero de sus dos padres. Es una victoria formal.</p><p>AquÃÂÃÂ­ queda cerrada la primera fase del juicio.</p>`,
-    fund: "ArtÃÂÃÂ­culos 807, 808 y 810 del CPCCDMX, junto con los artÃÂÃÂ­culos 1602 y 1607 del CÃÂÃÂ³digo Civil para la CDMX.",
+    n: 8, t: "El Juez lo declara heredero", date: "Última semana de julio", state: "pending",
+    body: `<p>Con los pasos anteriores cerrados, el Juez emite la primera sentencia importante: lo reconoce como único heredero de sus dos padres. Es una victoria formal.</p><p>Aquí queda cerrada la primera fase del juicio.</p>`,
+    fund: "Artículos 807, 808 y 810 del CPCCDMX, junto con los artículos 1602 y 1607 del Código Civil para la CDMX.",
     juris: "La Suprema Corte ha sostenido que el reconocimiento como heredero exige acreditar el parentesco; sus actas de nacimiento ya lo prueban."
   },
   {
     n: 9, t: "Le dan el cargo de albacea", date: "Primera quincena de agosto", state: "pending",
-    body: `<p>El Juez lo designa albacea (representante de la herencia frente a terceros), usted lo acepta bajo protesta y se le entrega oficialmente el cargo.</p><p>A partir de aquÃÂÃÂ­, tiene la autoridad para manejar los bienes y firmar a nombre de la sucesiÃÂÃÂ³n.</p>`,
-    fund: "ArtÃÂÃÂ­culos 1679 a 1706 del CÃÂÃÂ³digo Civil para la CDMX y 815 y 816 del CPCCDMX.",
-    juris: "Con la aceptaciÃÂÃÂ³n formal del cargo, usted tiene legitimaciÃÂÃÂ³n plena para actuar."
+    body: `<p>El Juez lo designa albacea (representante de la herencia frente a terceros), usted lo acepta bajo protesta y se le entrega oficialmente el cargo.</p><p>A partir de aquí, tiene la autoridad para manejar los bienes y firmar a nombre de la sucesión.</p>`,
+    fund: "Artículos 1679 a 1706 del Código Civil para la CDMX y 815 y 816 del CPCCDMX.",
+    juris: "Con la aceptación formal del cargo, usted tiene legitimación plena para actuar."
   },
   {
-    n: 10, t: "Hacemos lista y valuaciÃÂÃÂ³n de los bienes", date: "Septiembre y octubre", state: "pending",
-    body: `<p>Como albacea, usted presenta el inventario: la lista detallada de bienes, derechos y, en su caso, deudas. Para inmuebles se acompaÃÂÃÂ±an avalÃÂÃÂºos.</p><p>Si nadie objeta, el Juez lo aprueba y se cierra esta secciÃÂÃÂ³n.</p>`,
-    fund: "ArtÃÂÃÂ­culos 816 a 826 del CPCCDMX.",
+    n: 10, t: "Hacemos lista y valuación de los bienes", date: "Septiembre y octubre", state: "pending",
+    body: `<p>Como albacea, usted presenta el inventario: la lista detallada de bienes, derechos y, en su caso, deudas. Para inmuebles se acompañan avalúos.</p><p>Si nadie objeta, el Juez lo aprueba y se cierra esta sección.</p>`,
+    fund: "Artículos 816 a 826 del CPCCDMX.",
     juris: "El inventario es la base para todo lo que sigue; los criterios judiciales son consistentes en que debe ser completo y honesto."
   },
   {
-    n: 11, t: "AdministraciÃÂÃÂ³n de los bienes", date: "Octubre y noviembre", state: "pending",
-    body: `<p>Mientras se prepara el reparto, usted administra los bienes con buen criterio: cobra rentas si las hay, paga gastos necesarios, cuida lo que se debe cuidar.</p><p>Si los bienes estÃÂÃÂ¡n todos identificados y no hay pleitos pendientes, esta secciÃÂÃÂ³n se vuelve breve.</p>`,
-    fund: "ArtÃÂÃÂ­culos 1693 a 1706 del CÃÂÃÂ³digo Civil para la CDMX y 827 a 839 del CPCCDMX.",
-    juris: "El criterio dominante: el albacea actÃÂÃÂºa con la diligencia de un buen padre de familia y rinde cuentas cuando se lo piden."
+    n: 11, t: "Administración de los bienes", date: "Octubre y noviembre", state: "pending",
+    body: `<p>Mientras se prepara el reparto, usted administra los bienes con buen criterio: cobra rentas si las hay, paga gastos necesarios, cuida lo que se debe cuidar.</p><p>Si los bienes están todos identificados y no hay pleitos pendientes, esta sección se vuelve breve.</p>`,
+    fund: "Artículos 1693 a 1706 del Código Civil para la CDMX y 827 a 839 del CPCCDMX.",
+    juris: "El criterio dominante: el albacea actúa con la diligencia de un buen padre de familia y rinde cuentas cuando se lo piden."
   },
   {
-    n: 12, t: "Proyecto de cÃÂÃÂ³mo se reparte", date: "Noviembre", state: "pending",
-    body: `<p>Como usted es el ÃÂÃÂºnico heredero (despuÃÂÃÂ©s del paso 6), el proyecto de particiÃÂÃÂ³n es directo: todo se adjudica a su nombre. Se notifica a los interesados, no deberÃÂÃÂ­a haber objeciones.</p><p>Si pasa el plazo sin observaciones, el Juez lo aprueba.</p>`,
-    fund: "ArtÃÂÃÂ­culos 1707 a 1791 del CÃÂÃÂ³digo Civil para la CDMX y 840 a 856 del CPCCDMX.",
-    juris: "La aprobaciÃÂÃÂ³n judicial del proyecto vale como tÃÂÃÂ­tulo para inscribir los bienes despuÃÂÃÂ©s en el Registro."
+    n: 12, t: "Proyecto de cómo se reparte", date: "Noviembre", state: "pending",
+    body: `<p>Como usted es el único heredero (después del paso 6), el proyecto de partición es directo: todo se adjudica a su nombre. Se notifica a los interesados, no debería haber objeciones.</p><p>Si pasa el plazo sin observaciones, el Juez lo aprueba.</p>`,
+    fund: "Artículos 1707 a 1791 del Código Civil para la CDMX y 840 a 856 del CPCCDMX.",
+    juris: "La aprobación judicial del proyecto vale como título para inscribir los bienes después en el Registro."
   },
   {
     n: 13, t: "Sentencia que le da los bienes", date: "Diciembre", state: "pending",
-    body: `<p>El Juez dicta la sentencia final: declara que los bienes pasan a ser de su propiedad por derecho de herencia. Esta es la segunda sentencia importante del proceso.</p><p>Cuando queda firme, ya es tÃÂÃÂ­tulo suficiente para registrar todo a su nombre.</p>`,
-    fund: "ArtÃÂÃÂ­culos 856 a 863 del CPCCDMX.",
-    juris: "La sentencia firme de adjudicaciÃÂÃÂ³n es tÃÂÃÂ­tulo de propiedad ante el Registro PÃÂÃÂºblico."
+    body: `<p>El Juez dicta la sentencia final: declara que los bienes pasan a ser de su propiedad por derecho de herencia. Esta es la segunda sentencia importante del proceso.</p><p>Cuando queda firme, ya es título suficiente para registrar todo a su nombre.</p>`,
+    fund: "Artículos 856 a 863 del CPCCDMX.",
+    juris: "La sentencia firme de adjudicación es título de propiedad ante el Registro Público."
   },
   {
     n: 14, t: "Registro a su nombre", date: "Enero de 2027", state: "pending",
-    body: `<p>Llevamos la sentencia al Registro PÃÂÃÂºblico de la Propiedad y los inmuebles aparecen oficialmente a su nombre. Desde aquÃÂÃÂ­, usted ejerce todos los derechos como propietario sin restricciÃÂÃÂ³n.</p><p>AquÃÂÃÂ­ termina el juicio. Lo demÃÂÃÂ¡s es vivir con su patrimonio.</p>`,
-    fund: "ArtÃÂÃÂ­culos 3007 y 3042 del CÃÂÃÂ³digo Civil para la CDMX, y la Ley Registral local.",
-    juris: "Con la inscripciÃÂÃÂ³n, su propiedad queda oponible a cualquier tercero. Fin del proceso."
+    body: `<p>Llevamos la sentencia al Registro Público de la Propiedad y los inmuebles aparecen oficialmente a su nombre. Desde aquí, usted ejerce todos los derechos como propietario sin restricción.</p><p>Aquí termina el juicio. Lo demás es vivir con su patrimonio.</p>`,
+    fund: "Artículos 3007 y 3042 del Código Civil para la CDMX, y la Ley Registral local.",
+    juris: "Con la inscripción, su propiedad queda oponible a cualquier tercero. Fin del proceso."
   }
 ];
 
@@ -390,7 +389,7 @@ const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerH
 camera.position.set(0, 0, 18);
 camera.lookAt(0, 0, 0);
 
-// === IluminaciÃÂÃÂ³n cÃÂÃÂ³smica ===
+// === Iluminación cósmica ===
 scene.add(new THREE.AmbientLight(0x331144, 0.45));
 const coolKey = new THREE.DirectionalLight(0x66e4ff, 0.55);
 coolKey.position.set(2, 4, 5);
@@ -405,7 +404,7 @@ const cianFill = new THREE.PointLight(0x66e4ff, 1.0, 30, 2);
 cianFill.position.set(-6, 2, 4);
 scene.add(cianFill);
 
-// === Teseracto: proyecciÃÂÃÂ³n de Schlegel del hipercubo ===
+// === Teseracto: proyección de Schlegel del hipercubo ===
 // (cubo externo + cubo interno + 8 conectores diagonales)
 function makeTesseract(outerSize, innerSize, outerColor, innerColor, opacity) {
   const oh = outerSize / 2, ih = innerSize / 2;
@@ -437,7 +436,7 @@ function makeTesseract(outerSize, innerSize, outerColor, innerColor, opacity) {
   const innerLines = new THREE.LineSegments(iGeo, new THREE.LineBasicMaterial({color: innerColor, transparent: true, opacity: Math.min(1, opacity*1.4), depthWrite: false}));
   group.add(innerLines);
 
-  // Conectores diagonales (vÃÂÃÂ©rtice externo i ÃÂ¢ÃÂÃÂ vÃÂÃÂ©rtice interno i) ÃÂ¢ÃÂÃÂ esto es lo que hace que sea 4D
+  // Conectores diagonales (vértice externo i ↔ vértice interno i) — esto es lo que hace que sea 4D
   const connPos = [];
   for (let i = 0; i < 8; i++) {
     connPos.push(...outerV[i], ...innerV[i]);
@@ -447,7 +446,7 @@ function makeTesseract(outerSize, innerSize, outerColor, innerColor, opacity) {
   const connLines = new THREE.LineSegments(cGeo, new THREE.LineBasicMaterial({color: innerColor, transparent: true, opacity: opacity*0.85, depthWrite: false}));
   group.add(connLines);
 
-  // Esferas pequeÃÂÃÂ±as en cada vÃÂÃÂ©rtice (LEDs)
+  // Esferas pequeñas en cada vértice (LEDs)
   const dotMat = new THREE.MeshBasicMaterial({color: outerColor, transparent: true, opacity});
   const innerDotMat = new THREE.MeshBasicMaterial({color: innerColor, transparent: true, opacity: Math.min(1, opacity*1.4)});
   const dotGeo = new THREE.SphereGeometry(outerSize * 0.012, 8, 8);
@@ -466,7 +465,7 @@ function makeTesseract(outerSize, innerSize, outerColor, innerColor, opacity) {
   return group;
 }
 
-// MÃÂÃÂºltiples teseractos anidados para efecto de "infinity mirror"
+// Múltiples teseractos anidados para efecto de "infinity mirror"
 const cubes = [];
 const tesseractData = [
   {outer: 4.5, inner: 1.6, oc: 0xff3bd4, ic: 0xff3bd4, op: 1.0, speed: [0.07, 0.05, 0.03]},
@@ -529,7 +528,7 @@ folderGroup.add(papers);
 const folderBase = new THREE.Mesh(new THREE.BoxGeometry(1.6, 0.06, 2.05), new THREE.MeshStandardMaterial({color: folderColor, roughness: 0.4, metalness: 0.6, emissive: 0x553c08, emissiveIntensity: 0.25}));
 folderBase.position.y = 0.045;
 folderGroup.add(folderBase);
-// pestaÃÂÃÂ±a
+// pestaña
 const tab = new THREE.Mesh(new THREE.BoxGeometry(0.4, 0.04, 0.35), new THREE.MeshStandardMaterial({color: 0xa8803a, roughness: 0.5, metalness: 0.5}));
 tab.position.set(0.7, 0.085, 0.92);
 folderGroup.add(tab);
@@ -546,10 +545,10 @@ function expLabel(text, sub) {
   ctx.font = 'italic 30px Georgia'; ctx.fillStyle = '#6b4a26';
   ctx.fillText(sub, 384, 170);
   ctx.font = '20px Georgia'; ctx.fillStyle = '#a87a3a';
-  ctx.fillText('TSJCDMX ÃÂÃÂ· J8 Familiar', 384, 215);
+  ctx.fillText('TSJCDMX · J8 Familiar', 384, 215);
   return new THREE.CanvasTexture(c);
 }
-const labelPlane = new THREE.Mesh(new THREE.PlaneGeometry(1.0, 0.34), new THREE.MeshStandardMaterial({map: expLabel('EXP. 292/2026','SucesiÃÂÃÂ³n Intestamentaria'), roughness: 0.7, emissive: 0xfff0c8, emissiveIntensity: 0.15}));
+const labelPlane = new THREE.Mesh(new THREE.PlaneGeometry(1.0, 0.34), new THREE.MeshStandardMaterial({map: expLabel('EXP. 292/2026','Sucesión Intestamentaria'), roughness: 0.7, emissive: 0xfff0c8, emissiveIntensity: 0.15}));
 labelPlane.rotation.x = -Math.PI/2;
 labelPlane.position.set(-0.1, 0.077, 0.55);
 folderGroup.add(labelPlane);
@@ -564,7 +563,7 @@ knot.position.set(-0.4, 0.13, 0); folderGroup.add(knot);
 
 scene.add(folderGroup);
 
-// Halo de anomalÃÂÃÂ­a ÃÂ¢ÃÂÃÂ magenta/cian dual
+// Halo de anomalía — magenta/cian dual
 const anomalyHalo = new THREE.Mesh(new THREE.SphereGeometry(1.8, 32, 32), new THREE.MeshBasicMaterial({color: 0xff3bd4, transparent: true, opacity: 0.18, side: THREE.BackSide, depthWrite: false, blending: THREE.AdditiveBlending}));
 scene.add(anomalyHalo);
 const anomalyHalo2 = new THREE.Mesh(new THREE.SphereGeometry(3.4, 32, 32), new THREE.MeshBasicMaterial({color: 0x66e4ff, transparent: true, opacity: 0.09, side: THREE.BackSide, depthWrite: false, blending: THREE.AdditiveBlending}));
@@ -585,7 +584,7 @@ function makePanelTexture(stage) {
   else if (stage.state === 'now') { g.addColorStop(0, '#3a0a2a'); g.addColorStop(1, '#1a0414'); }
   else { g.addColorStop(0, '#1a0a30'); g.addColorStop(1, '#070318'); }
   x.fillStyle = g; x.fillRect(0,0,768,1024);
-  // PatrÃÂÃÂ³n sutil de "lÃÂÃÂ­neas de tiempo"
+  // Patrón sutil de "líneas de tiempo"
   for (let i = 0; i < 14; i++) {
     x.strokeStyle = `rgba(255,255,255,${0.04 + Math.random()*0.05})`;
     x.lineWidth = 0.6;
@@ -597,7 +596,7 @@ function makePanelTexture(stage) {
   x.strokeRect(12,12,744,1000);
   x.lineWidth = 1.5;
   x.strokeRect(28,28,712,968);
-  // NÃÂÃÂºmero grande arriba
+  // Número grande arriba
   x.fillStyle = borderColor + '40';
   x.beginPath(); x.arc(384, 220, 130, 0, Math.PI*2); x.fill();
   x.strokeStyle = borderColor; x.lineWidth = 3;
@@ -611,7 +610,7 @@ function makePanelTexture(stage) {
   x.fillStyle = borderColor;
   x.font = 'bold 28px -apple-system, sans-serif'; x.letterSpacing = '4px';
   x.fillText('ETAPA', 384, 410);
-  // TÃÂÃÂ­tulo
+  // Título
   x.fillStyle = '#ffffff';
   x.font = 'bold 44px Georgia, serif';
   const words = stage.t.split(' ');
@@ -628,7 +627,7 @@ function makePanelTexture(stage) {
   x.font = 'italic 30px Georgia, serif';
   x.fillText(stage.date, 384, 700);
   // Estado
-  const stateLabel = stage.state==='done' ? 'CUMPLIDA' : stage.state==='now' ? 'EN CURSO' : 'PRÃÂÃÂXIMA';
+  const stateLabel = stage.state==='done' ? 'CUMPLIDA' : stage.state==='now' ? 'EN CURSO' : 'PRÓXIMA';
   x.fillStyle = borderColor + '30';
   x.fillRect(254, 780, 260, 60);
   x.strokeStyle = borderColor; x.lineWidth = 2;
@@ -654,14 +653,14 @@ function makePanelTexture(stage) {
   return new THREE.CanvasTexture(c);
 }
 
-// DistribuciÃÂÃÂ³n de los 14 paneles dentro del teseracto
-// PatrÃÂÃÂ³n: una doble espiral cÃÂÃÂºbica que recorre el espacio
+// Distribución de los 14 paneles dentro del teseracto
+// Patrón: una doble espiral cúbica que recorre el espacio
 const panels = [];
 const positions3D = [];
 
 function spreadPositions() {
-  // Posiciones distribuidas en un patrÃÂÃÂ³n cÃÂÃÂºbico orgÃÂÃÂ¡nico
-  // 14 puntos en un patrÃÂÃÂ³n espiral cÃÂÃÂºbico
+  // Posiciones distribuidas en un patrón cúbico orgánico
+  // 14 puntos en un patrón espiral cúbico
   const N = STAGES.length;
   for (let i = 0; i < N; i++) {
     const t = i / (N - 1);
@@ -671,7 +670,7 @@ function spreadPositions() {
     const x = Math.cos(angle) * radius;
     const z = Math.sin(angle) * radius;
     const y = -4.5 + t * 9;
-    // PequeÃÂÃÂ±o desplazamiento cuadrÃÂÃÂ¡tico
+    // Pequeño desplazamiento cuadrático
     positions3D.push(new THREE.Vector3(x, y, z));
   }
 }
@@ -690,12 +689,12 @@ STAGES.forEach((stage, i) => {
   const panel = new THREE.Mesh(new THREE.PlaneGeometry(panelW, panelH), new THREE.MeshBasicMaterial({map: tex, transparent: true, side: THREE.DoubleSide, depthWrite: false}));
   panelG.add(panel);
 
-  // Glow detrÃÂÃÂ¡s
+  // Glow detrás
   const glow = new THREE.Mesh(new THREE.PlaneGeometry(panelW * 1.4, panelH * 1.3), new THREE.MeshBasicMaterial({color: borderColor, transparent: true, opacity: 0.18, depthWrite: false, blending: THREE.AdditiveBlending}));
   glow.position.z = -0.02;
   panelG.add(glow);
 
-  // Marco luminoso (lÃÂÃÂ­neas)
+  // Marco luminoso (líneas)
   const w2 = panelW/2 + 0.06, h2 = panelH/2 + 0.06;
   const fp = [-w2,-h2,0, w2,-h2,0,  w2,-h2,0, w2,h2,0,  w2,h2,0, -w2,h2,0,  -w2,h2,0, -w2,-h2,0];
   const fgeo = new THREE.BufferGeometry();
@@ -704,7 +703,7 @@ STAGES.forEach((stage, i) => {
   frame.position.z = 0.01;
   panelG.add(frame);
 
-  // PequeÃÂÃÂ±as lÃÂÃÂ­neas de "lÃÂÃÂ­neas de tiempo" laterales (decoraciÃÂÃÂ³n estilo Interestelar)
+  // Pequeñas líneas de "líneas de tiempo" laterales (decoración estilo Interestelar)
   for (let k = 0; k < 4; k++) {
     const tickPositions = new Float32Array([w2 + 0.05 + k*0.15, -h2*0.6 + k*h2*0.4, 0,  w2 + 0.05 + k*0.15, h2*0.6 - k*h2*0.4, 0]);
     const tgeo = new THREE.BufferGeometry();
@@ -713,7 +712,7 @@ STAGES.forEach((stage, i) => {
     panelG.add(tick);
   }
 
-  // Si esta etapa estÃÂÃÂ¡ EN CURSO, le ponemos halo extra grande y un anillo dorado pulsante
+  // Si esta etapa está EN CURSO, le ponemos halo extra grande y un anillo dorado pulsante
   let nowMarker = null;
   if (stage.state === 'now') {
     // Halo gigante magenta
@@ -742,7 +741,7 @@ STAGES.forEach((stage, i) => {
   panels.push(panelG);
 });
 
-// LÃÂÃÂ­neas conectando los paneles en orden (camino cronolÃÂÃÂ³gico)
+// Líneas conectando los paneles en orden (camino cronológico)
 const pathPoints = panels.map(p => p.position.clone());
 const pathCurve = new THREE.CatmullRomCurve3(pathPoints);
 const pathGeo = new THREE.TubeGeometry(pathCurve, 200, 0.02, 8, false);
@@ -760,7 +759,7 @@ controls.enableRotate = true;
 controls.enablePan = false;
 controls.enabled = false;
 
-// === INTERACCIÃÂÃÂN ===
+// === INTERACCIÓN ===
 const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
 let mode = 'cosmos'; // cosmos | tesseract
@@ -833,7 +832,7 @@ function openTesseract() {
 
   // Fade folder
   folderGroup.traverse(o => { if (o.material) o.material.transparent = true; });
-  // Movimiento de cÃÂÃÂ¡mara: alejarse y rotar
+  // Movimiento de cámara: alejarse y rotar
   const startPos = camera.position.clone();
   const targetPos = new THREE.Vector3(8, 4, 16);
   const startT = performance.now();
@@ -863,7 +862,7 @@ function openStageModal(idx) {
   document.getElementById('mTitle').textContent = s.t;
   document.getElementById('mDate').textContent = s.date;
   const stateEl = document.getElementById('mState');
-  stateEl.textContent = s.state === 'done' ? 'Cumplida' : s.state === 'now' ? 'En curso' : 'PrÃÂÃÂ³xima';
+  stateEl.textContent = s.state === 'done' ? 'Cumplida' : s.state === 'now' ? 'En curso' : 'Próxima';
   stateEl.className = 'stage-state-tag ' + s.state;
   document.getElementById('mBody').innerHTML = s.body;
   document.getElementById('mFundamento').textContent = s.fund;
@@ -872,7 +871,7 @@ function openStageModal(idx) {
   if (s.img && IMG[s.img]) {
     imgWrap.innerHTML = `<img class="stage-img" src="data:image/jpeg;base64,${IMG[s.img]}" alt="Documento de la etapa">`;
   } else {
-    imgWrap.innerHTML = `<div class="stage-img-placeholder"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/><path d="M19 17v4M17 19h4"/></svg><div>Documento se sumarÃÂÃÂ¡ aquÃÂÃÂ­ cuando lleguemos a este momento</div></div>`;
+    imgWrap.innerHTML = `<div class="stage-img-placeholder"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/><path d="M19 17v4M17 19h4"/></svg><div>Documento se sumará aquí cuando lleguemos a este momento</div></div>`;
   }
   document.getElementById('mPrev').disabled = idx === 0;
   document.getElementById('mNext').disabled = idx === STAGES.length - 1;
@@ -910,99 +909,99 @@ document.getElementById('calClose').addEventListener('click', () => document.get
 document.getElementById('btnFicha').addEventListener('click', () => document.getElementById('ficha').classList.add('show'));
 document.getElementById('fichaClose').addEventListener('click', () => document.getElementById('ficha').classList.remove('show'));
 
-// === IMPRESIÃÂÃÂN A PDF ===
-// CatÃÂÃÂ¡logo de imÃÂÃÂ¡genes que pueden ir en una etapa y en los anexos finales
+// === IMPRESIÓN A PDF ===
+// Catálogo de imágenes que pueden ir en una etapa y en los anexos finales
 const IMG_CATALOG = [
-  {key: "acuse", titulo: "Acuse del escrito inicial", desc: "Sello de RECIBIDO de la OficialÃÂÃÂ­a de Partes ComÃÂÃÂºn del TSJCDMX, fechado el 7 de mayo de 2026. Folio INI/OPC/P1/PC187."},
-  {key: "buho_resultado", titulo: "Estado del expediente en consulta pÃÂÃÂºblica", desc: "Captura de la plataforma de monitoreo Buholegal: expediente 292/2026 radicado en el Juzgado 8ÃÂÃÂº Familiar de la CDMX."},
-  {key: "defun_padre", titulo: "Acta de defunciÃÂÃÂ³n del padre", desc: "Sr. Arturo Espejel Padilla. Folio MXRC 689297. Registro Civil del Estado de MÃÂÃÂ©xico."},
-  {key: "defun_madre", titulo: "Acta de defunciÃÂÃÂ³n de la madre", desc: "Sra. Mariana LÃÂÃÂ³pez Vargas. Folio MXRC 515317. Registro Civil del Estado de MÃÂÃÂ©xico."},
-  {key: "acta_promovente", titulo: "Acta de nacimiento del promovente", desc: "Sr. Arturo Espejel LÃÂÃÂ³pez, hijo de los dos autores de la sucesiÃÂÃÂ³n. Registro Civil de Toluca, Estado de MÃÂÃÂ©xico."},
-  {key: "acta_vieja", titulo: "Copia certificada original ÃÂ¢ÃÂÃÂ promovente", desc: "VersiÃÂÃÂ³n histÃÂÃÂ³rica del acta de nacimiento del promovente, en formato manuscrito."},
-  {key: "acta_cynthia", titulo: "Acta de nacimiento de Cynthia Esmeralda", desc: "Coheredera. Hija de los dos autores de la sucesiÃÂÃÂ³n. ManifestÃÂÃÂ³ ceder su parte."},
-  {key: "ine_juanluis", titulo: "IdentificaciÃÂÃÂ³n INE de Juan Luis GarcÃÂÃÂ­a LÃÂÃÂ³pez", desc: "Coheredero respecto de la sucesiÃÂÃÂ³n materna. Aporta identificaciÃÂÃÂ³n oficial vigente."},
-  {key: "buho_login", titulo: "Acceso a la plataforma de monitoreo", desc: "Inicio de sesiÃÂÃÂ³n en Buholegal para consulta judicial."},
-  {key: "buho_main", titulo: "Panel principal de Buholegal", desc: "Centro de consulta de litigaciÃÂÃÂ³n, investigaciÃÂÃÂ³n y acceso libre."},
-  {key: "buho_litigacion", titulo: "SubmenÃÂÃÂº de LitigaciÃÂÃÂ³n", desc: "Acceso a GestiÃÂÃÂ³n, Consulta de Expedientes y Alertas."},
-  {key: "buho_cdmx", titulo: "SelecciÃÂÃÂ³n de entidad ÃÂ¢ÃÂÃÂ Ciudad de MÃÂÃÂ©xico", desc: "Acceso a los expedientes estatales de CDMX."},
-  {key: "buho_juzgado", titulo: "SelecciÃÂÃÂ³n de juzgado", desc: "Listado de juzgados civiles y familiares de la CDMX."},
-  {key: "buho_familiar", titulo: "Juzgado 8ÃÂÃÂº Familiar seleccionado", desc: "ConfiguraciÃÂÃÂ³n del tipo de consulta dentro del Juzgado 8ÃÂÃÂº Familiar."},
-  {key: "buho_buscar", titulo: "BÃÂÃÂºsqueda por nÃÂÃÂºmero de expediente", desc: "Captura del nÃÂÃÂºmero 292/2026 para consulta directa."},
+  {key: "acuse", titulo: "Acuse del escrito inicial", desc: "Sello de RECIBIDO de la Oficialía de Partes Común del TSJCDMX, fechado el 7 de mayo de 2026. Folio INI/OPC/P1/PC187."},
+  {key: "buho_resultado", titulo: "Estado del expediente en consulta pública", desc: "Captura de la plataforma de monitoreo Buholegal: expediente 292/2026 radicado en el Juzgado 8º Familiar de la CDMX."},
+  {key: "defun_padre", titulo: "Acta de defunción del padre", desc: "Sr. Arturo Espejel Padilla. Folio MXRC 689297. Registro Civil del Estado de México."},
+  {key: "defun_madre", titulo: "Acta de defunción de la madre", desc: "Sra. Mariana López Vargas. Folio MXRC 515317. Registro Civil del Estado de México."},
+  {key: "acta_promovente", titulo: "Acta de nacimiento del promovente", desc: "Sr. Arturo Espejel López, hijo de los dos autores de la sucesión. Registro Civil de Toluca, Estado de México."},
+  {key: "acta_vieja", titulo: "Copia certificada original — promovente", desc: "Versión histórica del acta de nacimiento del promovente, en formato manuscrito."},
+  {key: "acta_cynthia", titulo: "Acta de nacimiento de Cynthia Esmeralda", desc: "Coheredera. Hija de los dos autores de la sucesión. Manifestó ceder su parte."},
+  {key: "ine_juanluis", titulo: "Identificación INE de Juan Luis García López", desc: "Coheredero respecto de la sucesión materna. Aporta identificación oficial vigente."},
+  {key: "buho_login", titulo: "Acceso a la plataforma de monitoreo", desc: "Inicio de sesión en Buholegal para consulta judicial."},
+  {key: "buho_main", titulo: "Panel principal de Buholegal", desc: "Centro de consulta de litigación, investigación y acceso libre."},
+  {key: "buho_litigacion", titulo: "Submenú de Litigación", desc: "Acceso a Gestión, Consulta de Expedientes y Alertas."},
+  {key: "buho_cdmx", titulo: "Selección de entidad — Ciudad de México", desc: "Acceso a los expedientes estatales de CDMX."},
+  {key: "buho_juzgado", titulo: "Selección de juzgado", desc: "Listado de juzgados civiles y familiares de la CDMX."},
+  {key: "buho_familiar", titulo: "Juzgado 8º Familiar seleccionado", desc: "Configuración del tipo de consulta dentro del Juzgado 8º Familiar."},
+  {key: "buho_buscar", titulo: "Búsqueda por número de expediente", desc: "Captura del número 292/2026 para consulta directa."},
 ];
 
-// Mapa de etapa ÃÂ¢ÃÂÃÂ lista de imÃÂÃÂ¡genes que la ilustran
+// Mapa de etapa → lista de imágenes que la ilustran
 const STAGE_IMAGES = {
-  1: [{k: "acuse", c: "Sello de Recibido ÃÂ¢ÃÂÃÂ 07 de mayo de 2026, folio INI/OPC/P1/PC187"}],
-  2: [{k: "buho_resultado", c: "Buholegal ÃÂ¢ÃÂÃÂ expediente 292/2026 registrado en el Juzgado 8ÃÂÃÂº Familiar"},
+  1: [{k: "acuse", c: "Sello de Recibido — 07 de mayo de 2026, folio INI/OPC/P1/PC187"}],
+  2: [{k: "buho_resultado", c: "Buholegal — expediente 292/2026 registrado en el Juzgado 8º Familiar"},
       {k: "buho_main", c: "Panel principal de monitoreo Buholegal"}],
-  4: [{k: "defun_padre", c: "Acta de defunciÃÂÃÂ³n del padre ÃÂ¢ÃÂÃÂ base para acreditar la sucesiÃÂÃÂ³n"},
-      {k: "defun_madre", c: "Acta de defunciÃÂÃÂ³n de la madre ÃÂ¢ÃÂÃÂ base para acreditar la sucesiÃÂÃÂ³n"}],
-  6: [{k: "acta_cynthia", c: "Acta de nacimiento de Cynthia ÃÂ¢ÃÂÃÂ coheredera que cederÃÂÃÂ¡ su parte"},
-      {k: "ine_juanluis", c: "INE de Juan Luis ÃÂ¢ÃÂÃÂ coheredero que cederÃÂÃÂ¡ su parte"}],
+  4: [{k: "defun_padre", c: "Acta de defunción del padre — base para acreditar la sucesión"},
+      {k: "defun_madre", c: "Acta de defunción de la madre — base para acreditar la sucesión"}],
+  6: [{k: "acta_cynthia", c: "Acta de nacimiento de Cynthia — coheredera que cederá su parte"},
+      {k: "ine_juanluis", c: "INE de Juan Luis — coheredero que cederá su parte"}],
   7: [{k: "acta_promovente", c: "Acta de nacimiento del promovente"},
-      {k: "acta_vieja", c: "VersiÃÂÃÂ³n histÃÂÃÂ³rica del acta del promovente"}],
+      {k: "acta_vieja", c: "Versión histórica del acta del promovente"}],
 };
 
 function buildPrintable() {
   const root = document.getElementById('printable');
-  const stateLabel = s => s === 'done' ? 'Cumplida' : s === 'now' ? 'En curso' : 'PrÃÂÃÂ³xima';
+  const stateLabel = s => s === 'done' ? 'Cumplida' : s === 'now' ? 'En curso' : 'Próxima';
   const today = new Date().toLocaleDateString('es-MX', {day:'numeric', month:'long', year:'numeric'});
 
-  // PORTADA ÃÂ¢ÃÂÃÂ UNA PÃÂÃÂGINA
+  // PORTADA — UNA PÁGINA
   const portada = `
     <div class="pcover">
       <div class="pcover-band">
-        <div class="pcover-eyebrow">Dictamen del proceso ÃÂÃÂ· ${today}</div>
-        <div class="pcover-title">Su sucesiÃÂÃÂ³n, paso a paso</div>
-        <div class="pcover-sub">Expediente 292/2026 ÃÂÃÂ· Juzgado 8ÃÂÃÂº de lo Familiar de la Ciudad de MÃÂÃÂ©xico</div>
+        <div class="pcover-eyebrow">Dictamen del proceso · ${today}</div>
+        <div class="pcover-title">Su sucesión, paso a paso</div>
+        <div class="pcover-sub">Expediente 292/2026 · Juzgado 8º de lo Familiar de la Ciudad de México</div>
       </div>
       <div class="pcover-fic">
         <div class="pstatus">
           <div class="pstatus-eyebrow">Estado actual al ${today}</div>
-          <div class="pstatus-title">Su expediente estÃÂÃÂ¡ radicado ÃÂÃÂ· todavÃÂÃÂ­a no existe acuerdo del Juez</div>
+          <div class="pstatus-title">Su expediente está radicado · todavía no existe acuerdo del Juez</div>
           <div class="pstatus-body">
             <div class="pstatus-row"><strong>Expediente</strong><span>292/2026</span></div>
-            <div class="pstatus-row"><strong>Juzgado</strong><span>8ÃÂÃÂº de lo Familiar de la Ciudad de MÃÂÃÂ©xico</span></div>
-            <div class="pstatus-row"><strong>Etapa actual</strong><span>2 de 14 ÃÂ¢ÃÂÃÂ El expediente toma forma</span></div>
+            <div class="pstatus-row"><strong>Juzgado</strong><span>8º de lo Familiar de la Ciudad de México</span></div>
+            <div class="pstatus-row"><strong>Etapa actual</strong><span>2 de 14 — El expediente toma forma</span></div>
             <div class="pstatus-row"><strong>Acuerdos publicados</strong><span>0 (cero)</span></div>
             <div class="pstatus-row"><strong>Nota oficial</strong><span>"Actualmente, Buholegal no registra acuerdos para este expediente"</span></div>
-            <div class="pstatus-row" style="border-bottom:none"><strong>PrÃÂÃÂ³ximo evento</strong><span>Primer acuerdo del Juez ÃÂ¢ÃÂÃÂ entre el 15 y el 22 de mayo de 2026</span></div>
+            <div class="pstatus-row" style="border-bottom:none"><strong>Próximo evento</strong><span>Primer acuerdo del Juez — entre el 15 y el 22 de mayo de 2026</span></div>
           </div>
         </div>
         <h3>Datos de su expediente</h3>
-        <div class="row"><strong>NÃÂÃÂºmero</strong><span>292/2026</span></div>
-        <div class="row"><strong>Tipo</strong><span>SucesiÃÂÃÂ³n sin testamento (acumulada de ambos padres)</span></div>
-        <div class="row"><strong>Promovente</strong><span>Sr. Arturo Espejel LÃÂÃÂ³pez, en calidad de hijo</span></div>
-        <div class="row"><strong>Padre fallecido</strong><span>Sr. Arturo Espejel Padilla ÃÂ¢ÃÂÃÂ 24 de enero de 2026</span></div>
-        <div class="row"><strong>Madre fallecida</strong><span>Sra. Mariana LÃÂÃÂ³pez Vargas ÃÂ¢ÃÂÃÂ 6 de agosto de 2025</span></div>
-        <div class="row"><strong>Hermanos llamados</strong><span>Cynthia Esmeralda Espejel LÃÂÃÂ³pez y Juan Luis GarcÃÂÃÂ­a LÃÂÃÂ³pez</span></div>
-        <div class="row"><strong>Fecha de presentaciÃÂÃÂ³n</strong><span>7 de mayo de 2026 ÃÂ¢ÃÂÃÂ OficialÃÂÃÂ­a de Partes ComÃÂÃÂºn TSJCDMX</span></div>
-        <div class="row"><strong>Folio interno</strong><span>INI/OPC/P1/PC187 ÃÂÃÂ· 329/07-05-2026</span></div>
-        <div class="row"><strong>Anexos entregados</strong><span>5 copias de registro civil ÃÂÃÂ· 2 certificadas ÃÂÃÂ· 2 traslados</span></div>
-        <div class="pfoot">Documento informativo generado para el cliente. Actualizado al ${today}. PrÃÂÃÂ³xima revisiÃÂÃÂ³n automÃÂÃÂ¡tica: cada 48 horas.</div>
+        <div class="row"><strong>Número</strong><span>292/2026</span></div>
+        <div class="row"><strong>Tipo</strong><span>Sucesión sin testamento (acumulada de ambos padres)</span></div>
+        <div class="row"><strong>Promovente</strong><span>Sr. Arturo Espejel López, en calidad de hijo</span></div>
+        <div class="row"><strong>Padre fallecido</strong><span>Sr. Arturo Espejel Padilla — 24 de enero de 2026</span></div>
+        <div class="row"><strong>Madre fallecida</strong><span>Sra. Mariana López Vargas — 6 de agosto de 2025</span></div>
+        <div class="row"><strong>Hermanos llamados</strong><span>Cynthia Esmeralda Espejel López y Juan Luis García López</span></div>
+        <div class="row"><strong>Fecha de presentación</strong><span>7 de mayo de 2026 — Oficialía de Partes Común TSJCDMX</span></div>
+        <div class="row"><strong>Folio interno</strong><span>INI/OPC/P1/PC187 · 329/07-05-2026</span></div>
+        <div class="row"><strong>Anexos entregados</strong><span>5 copias de registro civil · 2 certificadas · 2 traslados</span></div>
+        <div class="pfoot">Documento informativo generado para el cliente. Actualizado al ${today}. Próxima revisión automática: cada 48 horas.</div>
       </div>
     </div>`;
 
-  // SECCIÃÂÃÂN II ÃÂ¢ÃÂÃÂ ANTECEDENTES
+  // SECCIÓN II — ANTECEDENTES
   const antecedentes = `
     <div class="pstage">
       <div class="pstage-head">
         <div class="pstage-n-box now">I</div>
         <div class="pstage-info now">
           <div class="pstage-titulo">Antecedentes del expediente</div>
-          <div class="pstage-meta">Marco fÃÂÃÂ¡ctico que da origen al procedimiento</div>
+          <div class="pstage-meta">Marco fáctico que da origen al procedimiento</div>
         </div>
       </div>
       <div class="pstage-body">
-        <p>Su madre, la seÃÂÃÂ±ora Mariana LÃÂÃÂ³pez Vargas, falleciÃÂÃÂ³ el 6 de agosto de 2025 sin haber otorgado disposiciÃÂÃÂ³n testamentaria. Su padre, el seÃÂÃÂ±or Arturo Espejel Padilla, falleciÃÂÃÂ³ el 24 de enero de 2026, tambiÃÂÃÂ©n sin testamento. Al producirse la apertura sucesoria de ambos progenitores sin instrumento testamentario, conforme al artÃÂÃÂ­culo 1599 del CÃÂÃÂ³digo Civil para la Ciudad de MÃÂÃÂ©xico, corresponde abrir la sucesiÃÂÃÂ³n legÃÂÃÂ­tima por la vÃÂÃÂ­a intestamentaria.</p>
-        <p>Usted, como hijo procedente del matrimonio entre ambos finados, estÃÂÃÂ¡ llamado en primer orden a la sucesiÃÂÃÂ³n legÃÂÃÂ­tima, conforme a los artÃÂÃÂ­culos 1602 y 1607 del propio CÃÂÃÂ³digo Civil, en concurrencia con sus hermanos Cynthia Esmeralda Espejel LÃÂÃÂ³pez y Juan Luis GarcÃÂÃÂ­a LÃÂÃÂ³pez, quienes han manifestado su voluntad de ceder, mediante la figura del repudio, la porciÃÂÃÂ³n hereditaria que pudiera corresponderles.</p>
-        <p>Con esta motivaciÃÂÃÂ³n, el dÃÂÃÂ­a 7 de mayo de 2026 se presentÃÂÃÂ³ ante la OficialÃÂÃÂ­a de Partes ComÃÂÃÂºn del Tribunal Superior de Justicia de la Ciudad de MÃÂÃÂ©xico el escrito de denuncia del juicio sucesorio intestamentario acumulado a bienes de ambos progenitores. La denuncia recibiÃÂÃÂ³ el folio INI/OPC/P1/PC187 y fue turnada al Juzgado 8ÃÂÃÂº de lo Familiar de la Ciudad de MÃÂÃÂ©xico, donde quedÃÂÃÂ³ radicada bajo el expediente nÃÂÃÂºmero 292/2026, con cargo a la presentaciÃÂÃÂ³n del acuse correspondiente debidamente sellado.</p>
-        <p>El expediente fue acompaÃÂÃÂ±ado de las constancias siguientes: actas de defunciÃÂÃÂ³n de los autores de la sucesiÃÂÃÂ³n, actas de nacimiento del promovente y de los coherederos, identificaciones oficiales y los traslados de ley. Todos estos documentos se reproducen en la secciÃÂÃÂ³n de Anexos al final de este dictamen.</p>
+        <p>Su madre, la señora Mariana López Vargas, falleció el 6 de agosto de 2025 sin haber otorgado disposición testamentaria. Su padre, el señor Arturo Espejel Padilla, falleció el 24 de enero de 2026, también sin testamento. Al producirse la apertura sucesoria de ambos progenitores sin instrumento testamentario, conforme al artículo 1599 del Código Civil para la Ciudad de México, corresponde abrir la sucesión legítima por la vía intestamentaria.</p>
+        <p>Usted, como hijo procedente del matrimonio entre ambos finados, está llamado en primer orden a la sucesión legítima, conforme a los artículos 1602 y 1607 del propio Código Civil, en concurrencia con sus hermanos Cynthia Esmeralda Espejel López y Juan Luis García López, quienes han manifestado su voluntad de ceder, mediante la figura del repudio, la porción hereditaria que pudiera corresponderles.</p>
+        <p>Con esta motivación, el día 7 de mayo de 2026 se presentó ante la Oficialía de Partes Común del Tribunal Superior de Justicia de la Ciudad de México el escrito de denuncia del juicio sucesorio intestamentario acumulado a bienes de ambos progenitores. La denuncia recibió el folio INI/OPC/P1/PC187 y fue turnada al Juzgado 8º de lo Familiar de la Ciudad de México, donde quedó radicada bajo el expediente número 292/2026, con cargo a la presentación del acuse correspondiente debidamente sellado.</p>
+        <p>El expediente fue acompañado de las constancias siguientes: actas de defunción de los autores de la sucesión, actas de nacimiento del promovente y de los coherederos, identificaciones oficiales y los traslados de ley. Todos estos documentos se reproducen en la sección de Anexos al final de este dictamen.</p>
       </div>
-      <div class="pstage-meta-box"><strong>IdentificaciÃÂÃÂ³n del asunto</strong>SucesiÃÂÃÂ³n legÃÂÃÂ­tima intestamentaria acumulada a bienes de los seÃÂÃÂ±ores Arturo Espejel Padilla y Mariana LÃÂÃÂ³pez Vargas, promovida por el descendiente directo Arturo Espejel LÃÂÃÂ³pez, radicada bajo el expediente 292/2026 del Juzgado Octavo de lo Familiar del Tribunal Superior de Justicia de la Ciudad de MÃÂÃÂ©xico.</div>
+      <div class="pstage-meta-box"><strong>Identificación del asunto</strong>Sucesión legítima intestamentaria acumulada a bienes de los señores Arturo Espejel Padilla y Mariana López Vargas, promovida por el descendiente directo Arturo Espejel López, radicada bajo el expediente 292/2026 del Juzgado Octavo de lo Familiar del Tribunal Superior de Justicia de la Ciudad de México.</div>
     </div>`;
 
-  // SECCIÃÂÃÂN III ÃÂ¢ÃÂÃÂ MARCO NORMATIVO
+  // SECCIÓN III — MARCO NORMATIVO
   const marco = `
     <div class="pstage">
       <div class="pstage-head">
@@ -1013,14 +1012,14 @@ function buildPrintable() {
         </div>
       </div>
       <div class="pstage-body">
-        <p><strong>Normativa sustantiva.</strong> El procedimiento se rige, en lo sustantivo, por el CÃÂÃÂ³digo Civil para la Ciudad de MÃÂÃÂ©xico (continuaciÃÂÃÂ³n normativa del antiguo CÃÂÃÂ³digo Civil para el Distrito Federal). En particular, son aplicables los artÃÂÃÂ­culos 1281, que define la herencia como la sucesiÃÂÃÂ³n en todos los bienes, derechos y obligaciones del difunto que no se extinguen por la muerte; 1599, que abre la sucesiÃÂÃÂ³n legÃÂÃÂ­tima ante la ausencia o nulidad del testamento; 1602 a 1607, que fijan el orden de los herederos legÃÂÃÂ­timos, comenzando por los descendientes; 1624 a 1626, sobre la concurrencia del cÃÂÃÂ³nyuge supÃÂÃÂ©rstite con los descendientes; 1632 y 1633, sobre la representaciÃÂÃÂ³n sucesoria; 1655 a 1670, que regulan la forma y los efectos de la aceptaciÃÂÃÂ³n y el repudio de la herencia; 1679 a 1706, que estructuran el rÃÂÃÂ©gimen del albaceazgo; 1707 a 1791, que ordenan la particiÃÂÃÂ³n y adjudicaciÃÂÃÂ³n; y 3007 y 3042, que disciplinan la inscripciÃÂÃÂ³n registral de la transmisiÃÂÃÂ³n hereditaria.</p>
-        <p><strong>Normativa adjetiva.</strong> En materia procesal, son aplicables las disposiciones del CÃÂÃÂ³digo de Procedimientos Civiles para la Ciudad de MÃÂÃÂ©xico, en sus artÃÂÃÂ­culos 156, sobre la competencia territorial; 272-A y 272-G, relativos a la admisiÃÂÃÂ³n de la demanda y la facultad de prevenciÃÂÃÂ³n; y los artÃÂÃÂ­culos 774 a 868 del TÃÂÃÂ­tulo Decimocuarto, que regulan integralmente el juicio sucesorio en sus cuatro secciones: sucesiÃÂÃÂ³n propiamente dicha (primera secciÃÂÃÂ³n), inventarios y avalÃÂÃÂºos (segunda secciÃÂÃÂ³n), administraciÃÂÃÂ³n (tercera secciÃÂÃÂ³n) y particiÃÂÃÂ³n y adjudicaciÃÂÃÂ³n (cuarta secciÃÂÃÂ³n).</p>
-        <p><strong>Criterios orientadores de la Suprema Corte de Justicia de la NaciÃÂÃÂ³n y de Tribunales Colegiados de Circuito.</strong> Se atenderÃÂÃÂ¡n, en lo conducente, los siguientes: ContradicciÃÂÃÂ³n de Tesis 258/2020 y ContradicciÃÂÃÂ³n de Tesis 57/2020 de la Primera Sala, sobre los presupuestos y la naturaleza universal del juicio sucesorio; ContradicciÃÂÃÂ³n de Tesis 308/2011, sobre las reglas de competencia territorial en sucesiones; ContradicciÃÂÃÂ³n de Tesis 389/2017, sobre los efectos de la representaciÃÂÃÂ³n sucesoria; ContradicciÃÂÃÂ³n de Tesis 436/2018, sobre el acreditamiento del entroncamiento; tesis con registro digital 164047 del Semanario Judicial de la FederaciÃÂÃÂ³n, sobre los efectos del repudio de la herencia; y registro digital 2018208, sobre la liquidaciÃÂÃÂ³n de la sociedad conyugal como presupuesto indispensable del inventario sucesorio.</p>
-        <p>La copia ÃÂÃÂ­ntegra de los criterios anteriores, con su rubro completo, registro digital y extracto medular, forma parte del cuaderno de jurisprudencia que acompaÃÂÃÂ±a al expediente y queda a disposiciÃÂÃÂ³n para consulta del cliente o de cualquier interesado.</p>
+        <p><strong>Normativa sustantiva.</strong> El procedimiento se rige, en lo sustantivo, por el Código Civil para la Ciudad de México (continuación normativa del antiguo Código Civil para el Distrito Federal). En particular, son aplicables los artículos 1281, que define la herencia como la sucesión en todos los bienes, derechos y obligaciones del difunto que no se extinguen por la muerte; 1599, que abre la sucesión legítima ante la ausencia o nulidad del testamento; 1602 a 1607, que fijan el orden de los herederos legítimos, comenzando por los descendientes; 1624 a 1626, sobre la concurrencia del cónyuge supérstite con los descendientes; 1632 y 1633, sobre la representación sucesoria; 1655 a 1670, que regulan la forma y los efectos de la aceptación y el repudio de la herencia; 1679 a 1706, que estructuran el régimen del albaceazgo; 1707 a 1791, que ordenan la partición y adjudicación; y 3007 y 3042, que disciplinan la inscripción registral de la transmisión hereditaria.</p>
+        <p><strong>Normativa adjetiva.</strong> En materia procesal, son aplicables las disposiciones del Código de Procedimientos Civiles para la Ciudad de México, en sus artículos 156, sobre la competencia territorial; 272-A y 272-G, relativos a la admisión de la demanda y la facultad de prevención; y los artículos 774 a 868 del Título Decimocuarto, que regulan integralmente el juicio sucesorio en sus cuatro secciones: sucesión propiamente dicha (primera sección), inventarios y avalúos (segunda sección), administración (tercera sección) y partición y adjudicación (cuarta sección).</p>
+        <p><strong>Criterios orientadores de la Suprema Corte de Justicia de la Nación y de Tribunales Colegiados de Circuito.</strong> Se atenderán, en lo conducente, los siguientes: Contradicción de Tesis 258/2020 y Contradicción de Tesis 57/2020 de la Primera Sala, sobre los presupuestos y la naturaleza universal del juicio sucesorio; Contradicción de Tesis 308/2011, sobre las reglas de competencia territorial en sucesiones; Contradicción de Tesis 389/2017, sobre los efectos de la representación sucesoria; Contradicción de Tesis 436/2018, sobre el acreditamiento del entroncamiento; tesis con registro digital 164047 del Semanario Judicial de la Federación, sobre los efectos del repudio de la herencia; y registro digital 2018208, sobre la liquidación de la sociedad conyugal como presupuesto indispensable del inventario sucesorio.</p>
+        <p>La copia íntegra de los criterios anteriores, con su rubro completo, registro digital y extracto medular, forma parte del cuaderno de jurisprudencia que acompaña al expediente y queda a disposición para consulta del cliente o de cualquier interesado.</p>
       </div>
     </div>`;
 
-  // SECCIÃÂÃÂN IV ÃÂ¢ÃÂÃÂ ESTADO PROCESAL ACTUAL
+  // SECCIÓN IV — ESTADO PROCESAL ACTUAL
   const estado = `
     <div class="pstage">
       <div class="pstage-head">
@@ -1031,12 +1030,12 @@ function buildPrintable() {
         </div>
       </div>
       <div class="pstage-body">
-        <p>El expediente 292/2026 se encuentra <strong>radicado y en espera del primer acuerdo del Juez</strong>. La radicaciÃÂÃÂ³n consta en el sistema de consulta pÃÂÃÂºblica del Tribunal Superior de Justicia de la Ciudad de MÃÂÃÂ©xico (plataforma Buholegal), donde el expediente aparece registrado en el Juzgado 8ÃÂÃÂº de lo Familiar con cero acuerdos publicados a la fecha. La nota oficial del sistema indica de manera literal: <em>"Actualmente, Buholegal no registra acuerdos para este expediente"</em>.</p>
-        <p>Esta circunstancia es procesalmente normal y esperada. Conforme a la prÃÂÃÂ¡ctica del foro y a la carga ordinaria del Juzgado, el primer acuerdo del Juez ÃÂ¢ÃÂÃÂque tÃÂÃÂ­picamente admite la denuncia, tiene por presentado al promovente, reconoce a los abogados autorizados, ordena la formaciÃÂÃÂ³n del expediente y dispone los pasos inicialesÃÂ¢ÃÂÃÂ suele emitirse entre 7 y 14 dÃÂÃÂ­as hÃÂÃÂ¡biles a partir del cargo. En el presente caso, el primer pronunciamiento se espera entre el 15 y el 22 de mayo de 2026.</p>
-        <p>Mientras tanto, se ha establecido un sistema de monitoreo automatizado del expediente que consulta la plataforma judicial cada 48 horas y notifica de inmediato cualquier publicaciÃÂÃÂ³n, lo cual permite reaccionar a cualquier proveÃÂÃÂ­do del Juez en tiempo real.</p>
+        <p>El expediente 292/2026 se encuentra <strong>radicado y en espera del primer acuerdo del Juez</strong>. La radicación consta en el sistema de consulta pública del Tribunal Superior de Justicia de la Ciudad de México (plataforma Buholegal), donde el expediente aparece registrado en el Juzgado 8º de lo Familiar con cero acuerdos publicados a la fecha. La nota oficial del sistema indica de manera literal: <em>"Actualmente, Buholegal no registra acuerdos para este expediente"</em>.</p>
+        <p>Esta circunstancia es procesalmente normal y esperada. Conforme a la práctica del foro y a la carga ordinaria del Juzgado, el primer acuerdo del Juez —que típicamente admite la denuncia, tiene por presentado al promovente, reconoce a los abogados autorizados, ordena la formación del expediente y dispone los pasos iniciales— suele emitirse entre 7 y 14 días hábiles a partir del cargo. En el presente caso, el primer pronunciamiento se espera entre el 15 y el 22 de mayo de 2026.</p>
+        <p>Mientras tanto, se ha establecido un sistema de monitoreo automatizado del expediente que consulta la plataforma judicial cada 48 horas y notifica de inmediato cualquier publicación, lo cual permite reaccionar a cualquier proveído del Juez en tiempo real.</p>
       </div>
-      <div class="pstage-meta-box"><strong>Etapa en curso</strong>Etapa 2 de 14 ÃÂ¢ÃÂÃÂ "El expediente toma forma": fase de radicaciÃÂÃÂ³n en libro de gobierno del Juzgado, previa al primer pronunciamiento jurisdiccional.</div>
-      <div class="pstage-meta-box"><strong>PrÃÂÃÂ³ximo hito</strong>Etapa 3 de 14 ÃÂ¢ÃÂÃÂ "Primer acuerdo del Juez": emisiÃÂÃÂ³n del proveÃÂÃÂ­do inicial de admisiÃÂÃÂ³n, esperado en la tercera o cuarta semana de mayo de 2026.</div>
+      <div class="pstage-meta-box"><strong>Etapa en curso</strong>Etapa 2 de 14 — "El expediente toma forma": fase de radicación en libro de gobierno del Juzgado, previa al primer pronunciamiento jurisdiccional.</div>
+      <div class="pstage-meta-box"><strong>Próximo hito</strong>Etapa 3 de 14 — "Primer acuerdo del Juez": emisión del proveído inicial de admisión, esperado en la tercera o cuarta semana de mayo de 2026.</div>
     </div>`;
 
   const tocSection = `
@@ -1044,17 +1043,17 @@ function buildPrintable() {
       <div class="pstage-head">
         <div class="pstage-n-box pending">IV</div>
         <div class="pstage-info pending">
-          <div class="pstage-titulo">ÃÂÃÂndice del procedimiento</div>
+          <div class="pstage-titulo">Índice del procedimiento</div>
           <div class="pstage-meta">Las 14 etapas del juicio sucesorio</div>
         </div>
       </div>
       <div class="pstage-body">
-        <p>El juicio sucesorio intestamentario se desarrolla a travÃÂÃÂ©s de 14 etapas procesales sucesivas. A continuaciÃÂÃÂ³n se presentan en orden cronolÃÂÃÂ³gico, indicando para cada una su denominaciÃÂÃÂ³n, la fecha estimada de cumplimiento y su estado actual.</p>
+        <p>El juicio sucesorio intestamentario se desarrolla a través de 14 etapas procesales sucesivas. A continuación se presentan en orden cronológico, indicando para cada una su denominación, la fecha estimada de cumplimiento y su estado actual.</p>
         <div class="ptoc">
-          ${STAGES.map(s => `<div class="ptoc-row"><div class="n">${s.n}.</div><div class="name">${s.t}</div><div class="date">${s.date} ÃÂÃÂ· ${stateLabel(s.state)}</div></div>`).join('')}
-          <div class="ptoc-row" style="margin-top:10pt"><div class="n">ÃÂ¢ÃÂÃÂ</div><div class="name">Anexos ÃÂ¢ÃÂÃÂ Documentos del expediente</div><div class="date">Al final</div></div>
+          ${STAGES.map(s => `<div class="ptoc-row"><div class="n">${s.n}.</div><div class="name">${s.t}</div><div class="date">${s.date} · ${stateLabel(s.state)}</div></div>`).join('')}
+          <div class="ptoc-row" style="margin-top:10pt"><div class="n">★</div><div class="name">Anexos — Documentos del expediente</div><div class="date">Al final</div></div>
         </div>
-        <p style="margin-top:10pt">El detalle de cada etapa, con su descripciÃÂÃÂ³n, fundamento legal, criterio jurisprudencial y los documentos que la respaldan, se desarrolla en las pÃÂÃÂ¡ginas siguientes.</p>
+        <p style="margin-top:10pt">El detalle de cada etapa, con su descripción, fundamento legal, criterio jurisprudencial y los documentos que la respaldan, se desarrolla en las páginas siguientes.</p>
       </div>
     </div>`;
 
@@ -1082,10 +1081,10 @@ function buildPrintable() {
     </div>`;
   }).join('');
 
-  // ANEXOS ÃÂ¢ÃÂÃÂ todos los documentos del expediente
+  // ANEXOS — todos los documentos del expediente
   const anexos = `
     <div class="panexos">
-      <div class="panexos-title">Anexos ÃÂ¢ÃÂÃÂ Documentos del expediente</div>
+      <div class="panexos-title">Anexos — Documentos del expediente</div>
       <div class="panexos-sub">Reproducciones de las constancias, identificaciones y capturas de plataforma judicial que respaldan este procedimiento.</div>
       ${IMG_CATALOG.filter(c => IMG[c.key]).map(c => `
         <div class="panexo-block">
@@ -1101,16 +1100,16 @@ function buildPrintable() {
         <div class="pstage-n-box pending">VI</div>
         <div class="pstage-info pending">
           <div class="pstage-titulo">Cierre del dictamen</div>
-          <div class="pstage-meta">SÃÂÃÂ­ntesis y advertencias</div>
+          <div class="pstage-meta">Síntesis y advertencias</div>
         </div>
       </div>
       <div class="pstage-body">
-        <p>El presente dictamen ha desglosado, en sus partes tÃÂÃÂ©cnicas, fÃÂÃÂ¡cticas y procesales, el estado integral del expediente 292/2026 al dÃÂÃÂ­a ${today}. El expediente se encuentra correctamente radicado ante autoridad competente, la denuncia se presentÃÂÃÂ³ dentro del plazo razonable a partir del fallecimiento de los autores de la sucesiÃÂÃÂ³n, los anexos necesarios fueron entregados a la OficialÃÂÃÂ­a y el procedimiento ha avanzado hasta la segunda de las catorce etapas planeadas.</p>
-        <p>Al dÃÂÃÂ­a de hoy, la ÃÂÃÂºnica acciÃÂÃÂ³n procesal pendiente del lado del promovente y de su representaciÃÂÃÂ³n es la espera del primer pronunciamiento jurisdiccional, el cual, conforme a los plazos ordinarios del Juzgado Octavo de lo Familiar, se espera emitir entre el 15 y el 22 de mayo de 2026. No se requiere, en este momento procesal, ninguna gestiÃÂÃÂ³n adicional por parte del cliente.</p>
-        <p>Cualquier publicaciÃÂÃÂ³n que aparezca en el BoletÃÂÃÂ­n Judicial serÃÂÃÂ¡ detectada automÃÂÃÂ¡ticamente por el sistema de monitoreo y se procederÃÂÃÂ¡ a generar la respuesta procesal correspondiente con prontitud. Este dictamen se actualizarÃÂÃÂ¡ en cada momento relevante del juicio.</p>
-        <p>Se acompaÃÂÃÂ±a, como cuerpo final del documento, la secciÃÂÃÂ³n de Anexos, en la que se reproducen las constancias del Registro Civil, identificaciones oficiales y capturas del sistema judicial que respaldan el procedimiento.</p>
+        <p>El presente dictamen ha desglosado, en sus partes técnicas, fácticas y procesales, el estado integral del expediente 292/2026 al día ${today}. El expediente se encuentra correctamente radicado ante autoridad competente, la denuncia se presentó dentro del plazo razonable a partir del fallecimiento de los autores de la sucesión, los anexos necesarios fueron entregados a la Oficialía y el procedimiento ha avanzado hasta la segunda de las catorce etapas planeadas.</p>
+        <p>Al día de hoy, la única acción procesal pendiente del lado del promovente y de su representación es la espera del primer pronunciamiento jurisdiccional, el cual, conforme a los plazos ordinarios del Juzgado Octavo de lo Familiar, se espera emitir entre el 15 y el 22 de mayo de 2026. No se requiere, en este momento procesal, ninguna gestión adicional por parte del cliente.</p>
+        <p>Cualquier publicación que aparezca en el Boletín Judicial será detectada automáticamente por el sistema de monitoreo y se procederá a generar la respuesta procesal correspondiente con prontitud. Este dictamen se actualizará en cada momento relevante del juicio.</p>
+        <p>Se acompaña, como cuerpo final del documento, la sección de Anexos, en la que se reproducen las constancias del Registro Civil, identificaciones oficiales y capturas del sistema judicial que respaldan el procedimiento.</p>
       </div>
-      <div class="pstage-meta-box"><strong>Suscribe</strong>Despacho Virtual ÃÂ¢ÃÂÃÂ apoyo tÃÂÃÂ©cnico-documental al servicio del cliente. Documento actualizado al ${today}. PrÃÂÃÂ³xima revisiÃÂÃÂ³n automÃÂÃÂ¡tica: dentro de 48 horas.</div>
+      <div class="pstage-meta-box"><strong>Suscribe</strong>Despacho Virtual — apoyo técnico-documental al servicio del cliente. Documento actualizado al ${today}. Próxima revisión automática: dentro de 48 horas.</div>
     </div>`;
 
   root.innerHTML = portada + antecedentes + marco + estado + tocSection + stagesHTML + cierre + anexos;
@@ -1122,32 +1121,21 @@ document.getElementById('btnPrintBig').addEventListener('click', async () => {
   await new Promise(r => requestAnimationFrame(r));
   const imgs = document.querySelectorAll('#printable img');
   await Promise.all(Array.from(imgs).map(img => img.complete && img.naturalHeight !== 0 ? Promise.resolve() : new Promise(resolve => { img.onload = resolve; img.onerror = resolve; setTimeout(resolve, 1500); })));
-  // Extract print CSS rules + the #printable HTML
   const printable = document.getElementById('printable');
   const printableHTML = printable.outerHTML;
-  // Build standalone print document with ONLY the printable styles
   const styleRules = [];
-  Array.from(document.styleSheets).forEach(s=>{
-    try{Array.from(s.cssRules).forEach(r=>{
-      if(r.media && r.media.mediaText.includes('print')){
-        Array.from(r.cssRules).forEach(inner=>{
-          if(inner.selectorText && (inner.selectorText.includes('printable') || inner.selectorText.includes('pcover') || inner.selectorText.includes('pstage') || inner.selectorText.includes('panexo') || inner.selectorText.includes('pstatus') || inner.selectorText.includes('ptoc') || inner.selectorText.includes('pfoot'))){
-            styleRules.push(inner.cssText);
-          }
-        });
-        if(r.cssRules[0] && r.cssRules[0].cssText.includes('@page')) styleRules.push('@page{size:A4;margin:18mm 16mm}');
-      }
-    });}catch(e){}
-  });
-  const doc = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Dictamen 292/2026</title><style>@page{size:A4;margin:18mm 16mm}html,body{margin:0;padding:0;background:#fff;color:#1a1a1a;font-family:Georgia,"Times New Roman",serif}#printable{display:block!important;padding:0}.pcover{page-break-after:always;break-after:page;padding:30pt 0 0}.pstage{page-break-before:always;break-before:page;padding:0}.panexo-block{page-break-before:always;break-before:page}'+styleRules.join('\n').replace(/#printable /g,'').replace(/#printable\.?/g,'')+'</style></head><body>'+printableHTML.replace(/id="printable"/,'id="printable" style="display:block"')+'<script>window.onload=function(){setTimeout(function(){window.print();},500);};<\/script></body></html>';
+  Array.from(document.styleSheets).forEach(s => { try { Array.from(s.cssRules).forEach(r => { if (r.media && r.media.mediaText && r.media.mediaText.indexOf('print') >= 0) { Array.from(r.cssRules).forEach(inner => { if (inner.selectorText && (inner.selectorText.indexOf('printable') >= 0 || inner.selectorText.indexOf('pcover') >= 0 || inner.selectorText.indexOf('pstage') >= 0 || inner.selectorText.indexOf('panexo') >= 0 || inner.selectorText.indexOf('pstatus') >= 0 || inner.selectorText.indexOf('ptoc') >= 0 || inner.selectorText.indexOf('pfoot') >= 0)) { styleRules.push(inner.cssText); } }); } }); } catch (e) {} });
+  const cleanedRules = styleRules.join('\n').replace(/#printable /g, '').replace(/#printable\s*\{/g, 'body{');
+  const css = '@page{size:A4;margin:18mm 16mm}html,body{margin:0;padding:0;background:#fff;color:#1a1a1a;font-family:Georgia,"Times New Roman",serif}.pcover{page-break-after:always;break-after:page;padding:30pt 0 0}.pstage{page-break-before:always;break-before:page;padding:0}.panexo-block{page-break-before:always;break-before:page}' + cleanedRules;
+  const html = '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Dictamen 292/2026</title><style>' + css + '</style></head><body>' + printableHTML + '<scr'+'ipt>window.onload=function(){setTimeout(function(){window.print();},700);};</scr'+'ipt></body></html>';
   const w = window.open('', '_blank', 'width=900,height=700');
-  if (!w) { alert('Por favor permite ventanas emergentes para descargar el PDF.'); return; }
+  if (!w) { alert('Permite ventanas emergentes para descargar el PDF.'); return; }
   w.document.open();
-  w.document.write(doc);
+  w.document.write(html);
   w.document.close();
 });
 
-// === ANIMACIÃÂÃÂN ===
+// === ANIMACIÓN ===
 const clock = new THREE.Clock();
 function animate() {
   requestAnimationFrame(animate);
@@ -1172,7 +1160,7 @@ function animate() {
     folderGroup.rotation.x = Math.sin(t * 0.3) * 0.06;
     anomalyHalo.scale.setScalar(1 + Math.sin(t*1.5)*0.06);
     anomalyHalo2.scale.setScalar(1 + Math.sin(t*1.0)*0.04);
-    // cÃÂÃÂ¡mara con movimiento sutil
+    // cámara con movimiento sutil
     camera.position.x = Math.sin(t*0.15) * 0.5;
     camera.position.y = Math.sin(t*0.18) * 0.3;
     camera.lookAt(0, 0, 0);
@@ -1184,13 +1172,13 @@ function animate() {
       const phase = t * 0.5 + p.userData.phase;
       p.position.y = p.userData.basePos.y + Math.sin(phase) * 0.12;
       p.position.x = p.userData.basePos.x + Math.cos(phase * 0.7) * 0.08;
-      // Los paneles miran hacia la cÃÂÃÂ¡mara (billboard suave)
+      // Los paneles miran hacia la cámara (billboard suave)
       const dir = new THREE.Vector3().subVectors(camera.position, p.position).normalize();
       const targetRotY = Math.atan2(dir.x, dir.z);
       p.rotation.y = targetRotY + Math.sin(phase * 0.5) * 0.08;
       // Glow pulsa
       p.userData.glow.material.opacity = 0.14 + Math.sin(phase * 1.4) * 0.08;
-      // Marcador especial para el panel actual (USTED ESTÃÂÃÂ AQUÃÂÃÂ)
+      // Marcador especial para el panel actual (USTED ESTÁ AQUÍ)
       if (p.userData.isNow && p.userData.nowMarker) {
         const m = p.userData.nowMarker;
         m.bigHalo.scale.setScalar(1 + Math.sin(t * 2.0) * 0.15);
@@ -1212,7 +1200,7 @@ function animate() {
       v.project(camera);
       const sx = (v.x * 0.5 + 0.5) * window.innerWidth;
       const sy = (-v.y * 0.5 + 0.5) * window.innerHeight;
-      const visible = v.z < 1; // estÃÂÃÂ¡ delante de cÃÂÃÂ¡mara
+      const visible = v.z < 1; // está delante de cámara
       const youH = document.getElementById('youAreHere');
       if (visible) {
         youH.style.left = (sx - 100) + 'px';
