@@ -1,0 +1,15 @@
+{
+    "ultima_consulta": "2026-05-18T20:33:35Z",
+    "expediente": "292/2026",
+    "entidad": "Ciudad de México",
+    "juzgado": "Juzgado 8 Familiar",
+    "actor": "No publicado",
+    "demandado": "No publicado",
+    "acuerdos_count": 0,
+    "nota": "Actualmente, Buholegal no registra acuerdos para este expediente.",
+    "url_consulta": "https://www.buholegal.com/listaacuerdos/df/?juzgado=104&tipo=expediente&noexpediente=292%2F2026",
+    "historial": [
+          {"fecha": "2026-05-12T23:14:51Z", "acuerdos": 0, "cambio": false, "nota": "Primer monitoreo registrado"},
+          {"fecha": "2026-05-18T20:33:35Z", "acuerdos": 0, "cambio": false, "nota": "Sin cambios; expediente aún sin publicar en Boletín CDMX"}
+    ]
+}
