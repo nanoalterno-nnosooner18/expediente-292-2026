@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Su expediente en el tiempo · 292/2026</title>
+<title>Su expediente en el tiempo · 334/2026</title>
 <style>
   :root {
     --bg-deep: #000005;
@@ -189,7 +189,7 @@
 </div>
 
 <div id="topbar">
-  <div class="brand">EXPEDIENTE 292/2026<small>Juzgado 8º Familiar · CDMX</small></div>
+  <div class="brand">EXPEDIENTE 334/2026<small>Juzgado 25 Familiar · CDMX</small></div>
   <div class="topbtns">
     <button class="iconbtn" id="btnFicha" title="Ficha del expediente">
       <svg viewBox="0 0 24 24"><path d="M5 4h14a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
@@ -243,7 +243,7 @@
     <div style="display:flex;justify-content:space-between;align-items:flex-start">
       <div>
         <div class="cal-title">Línea del tiempo</div>
-        <div class="cal-sub">14 ETAPAS · EXPEDIENTE 292/2026</div>
+        <div class="cal-sub">14 ETAPAS · EXPEDIENTE 334/2026</div>
       </div>
       <button class="modal-close" id="calClose" style="position:static">×</button>
     </div>
@@ -261,8 +261,8 @@
       <button class="modal-close" id="fichaClose" style="position:static">×</button>
     </div>
     <table class="ficha-table">
-      <tr><th>Número</th><td>292/2026</td></tr>
-      <tr><th>Juzgado</th><td>Octavo de lo Familiar de la Ciudad de México</td></tr>
+      <tr><th>Número</th><td>334/2026</td></tr>
+      <tr><th>Juzgado</th><td>Vigésimo Quinto de lo Familiar de la Ciudad de México</td></tr>
       <tr><th>Tipo</th><td>Sucesión sin testamento, de los dos padres</td></tr>
       <tr><th>Quien lo presentó</th><td>Sr. Arturo Espejel López, hijo</td></tr>
       <tr><th>Papá</th><td>Sr. Arturo Espejel Padilla — falleció el 24 de enero de 2026</td></tr>
@@ -270,7 +270,7 @@
       <tr><th>Hermanos</th><td>Cynthia Esmeralda y Juan Luis — ambos manifestaron que ceden su parte al promovente</td></tr>
       <tr><th>Fecha de entrega</th><td>7 de mayo de 2026 (acuse oficial)</td></tr>
       <tr><th>Folio interno</th><td>INI/OPC/P1/PC187 · 329/07-05-2026</td></tr>
-      <tr><th>Última consulta</th><td>22 de mayo de 2026 — Buholegal: 1 acuerdo (19-may-2026). El Juzgado 8º Familiar de la CDMX se declaró INCOMPETENTE y NO admitió la sucesión; deja a salvo los derechos para acudir ante el juez competente.</td></tr>
+      <tr><th>Última consulta</th><td>25 de mayo de 2026 — Nuevo ingreso radicado en el Juzgado 25 de lo Familiar (exp. 334/2026). En espera del primer acuerdo. El juzgado anterior se declaró incompetente; el asunto se volvió a presentar ante el juez competente.</td></tr>
     </table>
   </div>
 </div>
@@ -292,20 +292,20 @@ const IMG = {"buho_login": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkL
 const STAGES = [
   {
     n: 1, t: "Entregamos el expediente", date: "7 de mayo de 2026", state: "done", img: "acuse",
-    body: `<p>Aquí empieza todo. Su expediente entró oficialmente al sistema judicial. La Oficialía lo recibió, le puso un folio y lo turnó al Juzgado 8º Familiar.</p><p>A partir de este día, todo lo que pasa con la sucesión queda registrado bajo el número 292/2026.</p>`,
+    body: `<p>Aquí empieza todo. Su expediente entró oficialmente al sistema judicial. La Oficialía lo recibió, le puso un folio y lo turnó al Juzgado 25 Familiar.</p><p>A partir de este día, todo lo que pasa con la sucesión queda registrado bajo el número 334/2026.</p>`,
     fund: "El Código de Procedimientos Civiles para la CDMX permite que un hijo abra el juicio de sucesión cuando los padres no dejaron testamento (artículos 774, 778 y 799).",
     juris: "La Suprema Corte ha dicho varias veces que el juicio sucesorio es la vía universal para acomodar los bienes de quien falleció sin testamento."
   },
   {
     n: 2, t: "El expediente toma forma", date: "Segunda semana de mayo", state: "done", img: "buho_resultado",
-    body: `<p>El Juzgado registra el caso en su libro de gobierno con el número 292/2026 y abre el legajo. Ya consta en consulta pública.</p><p>Importante: que el Juzgado forme el expediente y lo registre en su libro de gobierno no significa que lo haya admitido. Antes de dar entrada, el Juzgado todavía debía revisar si era territorialmente competente para conocer del asunto.</p>`,
+    body: `<p>El Juzgado registra el caso en su libro de gobierno con el número 334/2026 y abre el legajo. Ya consta en consulta pública.</p><p>Tu expediente se volvió a presentar ante el juzgado correcto: el 25 de mayo de 2026 quedó recibido en la Oficialía de Partes y se turnó al Juzgado 25 de lo Familiar de la Ciudad de México, con el número 334/2026.</p>`,
     fund: "Una vez recibido el escrito, el Juzgado tiene que registrar el asunto y emitir el primer acuerdo en un plazo prudente.",
     juris: "La SCJN ha aclarado las reglas territoriales que determinan qué juzgado conoce de cada sucesión."
   },
   {
-    n: 3, t: "El Juez se declaró incompetente", date: "18 de mayo de 2026", state: "now",
-    body: `<p><strong>Acuerdo del 18 de mayo de 2026 (publicado el 19 de mayo).</strong> El Juzgado 8º de lo Familiar resolvió <strong>NO admitir a trámite</strong> la sucesión por <strong>incompetencia territorial</strong>.</p><p>Con base en el artículo 156, fracción V, del Código de Procedimientos Civiles, la competencia en sucesiones corresponde al juez del último domicilio del autor de la herencia. Del acta de defunción el Juzgado consideró que ese domicilio estaba en Toluca, Estado de México, por lo que se inhibió de conocer el asunto.</p><p>El Juzgado deja a salvo los derechos del promovente para acudir ante el juez competente. El siguiente paso es decidir entre impugnar esa decisión o presentar la sucesión ante el juzgado que corresponda.</p>`,
-    fund: "La competencia en sucesiones se fija por el último domicilio del autor de la herencia (art. 156, fracción V, del CPC). El Juzgado, con base en el acta de defunción, lo ubicó en Toluca, Estado de México, y por ello se declaró incompetente.",
+    n: 3, t: "Primer acuerdo del Juez", date: "En espera · nuevo ingreso 25-may-2026", state: "now",
+    body: `<p><strong>Nuevo ingreso radicado el 25 de mayo de 2026.</strong> Tu sucesión se presentó ante el Juzgado 25 de lo Familiar de la Ciudad de México y quedó registrada con el número 334/2026. Ahora se espera el primer acuerdo de ese juzgado.</p><p>Antecedente: el primer juzgado al que se turnó (el 8º) se declaró incompetente por razón del domicilio; por eso el asunto se volvió a presentar, esta vez con la competencia debidamente fundada, ante el juzgado que ahora lo conoce.</p>`,
+    fund: "El juzgado registra el asunto y debe emitir su primer acuerdo en un plazo prudente. La competencia de este Juzgado 25 se sostiene en el último domicilio de los autores de la herencia en la Ciudad de México (art. 156, fracción V, del CPC).",
     juris: "Los tribunales han confirmado que esa facultad de aclarar se ejerce de una sola vez, sobre puntos específicos, y el promovente puede responder en un solo escrito."
   },
   {
@@ -553,7 +553,7 @@ function expLabel(text, sub) {
   ctx.fillText('TSJCDMX · J8 Familiar', 384, 215);
   return new THREE.CanvasTexture(c);
 }
-const labelPlane = new THREE.Mesh(new THREE.PlaneGeometry(1.0, 0.34), new THREE.MeshStandardMaterial({map: expLabel('EXP. 292/2026','Sucesión Intestamentaria'), roughness: 0.7, emissive: 0xfff0c8, emissiveIntensity: 0.15}));
+const labelPlane = new THREE.Mesh(new THREE.PlaneGeometry(1.0, 0.34), new THREE.MeshStandardMaterial({map: expLabel('EXP. 334/2026','Sucesión Intestamentaria'), roughness: 0.7, emissive: 0xfff0c8, emissiveIntensity: 0.15}));
 labelPlane.rotation.x = -Math.PI/2;
 labelPlane.position.set(-0.1, 0.077, 0.55);
 folderGroup.add(labelPlane);
@@ -918,7 +918,7 @@ document.getElementById('fichaClose').addEventListener('click', () => document.g
 // Catálogo de imágenes que pueden ir en una etapa y en los anexos finales
 const IMG_CATALOG = [
   {key: "acuse", titulo: "Acuse del escrito inicial", desc: "Sello de RECIBIDO de la Oficialía de Partes Común del TSJCDMX, fechado el 7 de mayo de 2026. Folio INI/OPC/P1/PC187."},
-  {key: "buho_resultado", titulo: "Estado del expediente en consulta pública", desc: "Captura de la plataforma de monitoreo Buholegal: expediente 292/2026 radicado en el Juzgado 8º Familiar de la CDMX."},
+  {key: "buho_resultado", titulo: "Estado del expediente en consulta pública", desc: "Captura de la plataforma de monitoreo Buholegal: expediente 334/2026 radicado en el Juzgado 25 Familiar de la CDMX."},
   {key: "defun_padre", titulo: "Acta de defunción del padre", desc: "Sr. Arturo Espejel Padilla. Folio MXRC 689297. Registro Civil del Estado de México."},
   {key: "defun_madre", titulo: "Acta de defunción de la madre", desc: "Sra. Mariana López Vargas. Folio MXRC 515317. Registro Civil del Estado de México."},
   {key: "acta_promovente", titulo: "Acta de nacimiento del promovente", desc: "Sr. Arturo Espejel López, hijo de los dos autores de la sucesión. Registro Civil de Toluca, Estado de México."},
@@ -930,14 +930,14 @@ const IMG_CATALOG = [
   {key: "buho_litigacion", titulo: "Submenú de Litigación", desc: "Acceso a Gestión, Consulta de Expedientes y Alertas."},
   {key: "buho_cdmx", titulo: "Selección de entidad — Ciudad de México", desc: "Acceso a los expedientes estatales de CDMX."},
   {key: "buho_juzgado", titulo: "Selección de juzgado", desc: "Listado de juzgados civiles y familiares de la CDMX."},
-  {key: "buho_familiar", titulo: "Juzgado 8º Familiar seleccionado", desc: "Configuración del tipo de consulta dentro del Juzgado 8º Familiar."},
-  {key: "buho_buscar", titulo: "Búsqueda por número de expediente", desc: "Captura del número 292/2026 para consulta directa."},
+  {key: "buho_familiar", titulo: "Juzgado 25 Familiar seleccionado", desc: "Configuración del tipo de consulta dentro del Juzgado 25 Familiar."},
+  {key: "buho_buscar", titulo: "Búsqueda por número de expediente", desc: "Captura del número 334/2026 para consulta directa."},
 ];
 
 // Mapa de etapa → lista de imágenes que la ilustran
 const STAGE_IMAGES = {
   1: [{k: "acuse", c: "Sello de Recibido — 07 de mayo de 2026, folio INI/OPC/P1/PC187"}],
-  2: [{k: "buho_resultado", c: "Buholegal — expediente 292/2026 registrado en el Juzgado 8º Familiar"},
+  2: [{k: "buho_resultado", c: "Buholegal — expediente 334/2026 registrado en el Juzgado 25 Familiar"},
       {k: "buho_main", c: "Panel principal de monitoreo Buholegal"}],
   4: [{k: "defun_padre", c: "Acta de defunción del padre — base para acreditar la sucesión"},
       {k: "defun_madre", c: "Acta de defunción de la madre — base para acreditar la sucesión"}],
@@ -958,23 +958,23 @@ function buildPrintable() {
       <div class="pcover-band">
         <div class="pcover-eyebrow">Dictamen del proceso · ${today}</div>
         <div class="pcover-title">Su sucesión, paso a paso</div>
-        <div class="pcover-sub">Expediente 292/2026 · Juzgado 8º de lo Familiar de la Ciudad de México</div>
+        <div class="pcover-sub">Expediente 334/2026 · Juzgado 25 de lo Familiar de la Ciudad de México</div>
       </div>
       <div class="pcover-fic">
         <div class="pstatus">
           <div class="pstatus-eyebrow">Estado actual al ${today}</div>
           <div class="pstatus-title">Su expediente está radicado · todavía no existe acuerdo del Juez</div>
           <div class="pstatus-body">
-            <div class="pstatus-row"><strong>Expediente</strong><span>292/2026</span></div>
-            <div class="pstatus-row"><strong>Juzgado</strong><span>8º de lo Familiar de la Ciudad de México</span></div>
+            <div class="pstatus-row"><strong>Expediente</strong><span>334/2026</span></div>
+            <div class="pstatus-row"><strong>Juzgado</strong><span>25 de lo Familiar de la Ciudad de México</span></div>
             <div class="pstatus-row"><strong>Etapa actual</strong><span>3 de 14 — Primer acuerdo del Juez (19-may-2026)</span></div>
             <div class="pstatus-row"><strong>Acuerdos publicados</strong><span>1 — primer acuerdo del 19 de mayo de 2026</span></div>
             <div class="pstatus-row"><strong>Nota oficial</strong><span>"Actualmente, Buholegal no registra acuerdos para este expediente"</span></div>
-            <div class="pstatus-row"><strong>Próximo evento</strong><span>Asunto NO admitido (incompetencia) el 19 de mayo de 2026 — sigue: búsqueda de testamento</span></div><div class="pstatus-row" style="border-bottom:none"><strong>Última consulta a Buholegal</strong><span>21 de mayo de 2026 — 1 acuerdo publicado (primer acuerdo del 19-may-2026)</span></div>
+            <div class="pstatus-row"><strong>Próximo evento</strong><span>Nuevo ingreso radicado el 25 de mayo de 2026</span></div><div class="pstatus-row" style="border-bottom:none"><strong>Última consulta a Buholegal</strong><span>21 de mayo de 2026 — 1 acuerdo publicado (primer acuerdo del 19-may-2026)</span></div>
           </div>
         </div>
         <h3>Datos de su expediente</h3>
-        <div class="row"><strong>Número</strong><span>292/2026</span></div>
+        <div class="row"><strong>Número</strong><span>334/2026</span></div>
         <div class="row"><strong>Tipo</strong><span>Sucesión sin testamento (acumulada de ambos padres)</span></div>
         <div class="row"><strong>Promovente</strong><span>Sr. Arturo Espejel López, en calidad de hijo</span></div>
         <div class="row"><strong>Padre fallecido</strong><span>Sr. Arturo Espejel Padilla — 24 de enero de 2026</span></div>
@@ -1001,10 +1001,10 @@ function buildPrintable() {
       <div class="pstage-body">
         <p>Su madre, la señora Mariana López Vargas, falleció el 6 de agosto de 2025 sin haber otorgado disposición testamentaria. Su padre, el señor Arturo Espejel Padilla, falleció el 24 de enero de 2026, también sin testamento. Al producirse la apertura sucesoria de ambos progenitores sin instrumento testamentario, conforme al artículo 1599 del Código Civil para la Ciudad de México, corresponde abrir la sucesión legítima por la vía intestamentaria.</p>
         <p>Usted, como hijo procedente del matrimonio entre ambos finados, está llamado en primer orden a la sucesión legítima, conforme a los artículos 1602 y 1607 del propio Código Civil, en concurrencia con sus hermanos Cynthia Esmeralda Espejel López y Juan Luis García López, quienes han manifestado su voluntad de ceder, mediante la figura del repudio, la porción hereditaria que pudiera corresponderles.</p>
-        <p>Con esta motivación, el día 7 de mayo de 2026 se presentó ante la Oficialía de Partes Común del Tribunal Superior de Justicia de la Ciudad de México el escrito de denuncia del juicio sucesorio intestamentario acumulado a bienes de ambos progenitores. La denuncia recibió el folio INI/OPC/P1/PC187 y fue turnada al Juzgado 8º de lo Familiar de la Ciudad de México, donde quedó radicada bajo el expediente número 292/2026, con cargo a la presentación del acuse correspondiente debidamente sellado.</p>
+        <p>Con esta motivación, el día 7 de mayo de 2026 se presentó ante la Oficialía de Partes Común del Tribunal Superior de Justicia de la Ciudad de México el escrito de denuncia del juicio sucesorio intestamentario acumulado a bienes de ambos progenitores. La denuncia recibió el folio INI/OPC/P1/PC187 y fue turnada al Juzgado 25 de lo Familiar de la Ciudad de México, donde quedó radicada bajo el expediente número 334/2026, con cargo a la presentación del acuse correspondiente debidamente sellado.</p>
         <p>El expediente fue acompañado de las constancias siguientes: actas de defunción de los autores de la sucesión, actas de nacimiento del promovente y de los coherederos, identificaciones oficiales y los traslados de ley. Todos estos documentos se reproducen en la sección de Anexos al final de este dictamen.</p>
       </div>
-      <div class="pstage-meta-box"><strong>Identificación del asunto</strong>Sucesión legítima intestamentaria acumulada a bienes de los señores Arturo Espejel Padilla y Mariana López Vargas, promovida por el descendiente directo Arturo Espejel López, radicada bajo el expediente 292/2026 del Juzgado Octavo de lo Familiar del Tribunal Superior de Justicia de la Ciudad de México.</div>
+      <div class="pstage-meta-box"><strong>Identificación del asunto</strong>Sucesión legítima intestamentaria acumulada a bienes de los señores Arturo Espejel Padilla y Mariana López Vargas, promovida por el descendiente directo Arturo Espejel López, radicada bajo el expediente 334/2026 del Juzgado Vigésimo Quinto de lo Familiar del Tribunal Superior de Justicia de la Ciudad de México.</div>
     </div>`;
 
   // SECCIÓN III — MARCO NORMATIVO
@@ -1036,7 +1036,7 @@ function buildPrintable() {
         </div>
       </div>
       <div class="pstage-body">
-        <p>El expediente 292/2026 se encuentra <strong>radicado y en espera del primer acuerdo del Juez</strong>. La radicación consta en el sistema de consulta pública del Tribunal Superior de Justicia de la Ciudad de México (plataforma Buholegal), donde el expediente aparece registrado en el Juzgado 8º de lo Familiar con cero acuerdos publicados a la fecha. La nota oficial del sistema indica de manera literal: <em>"Actualmente, Buholegal no registra acuerdos para este expediente"</em>.</p>
+        <p>El expediente 334/2026 se encuentra <strong>radicado y en espera del primer acuerdo del Juez</strong>. La radicación consta en el sistema de consulta pública del Tribunal Superior de Justicia de la Ciudad de México (plataforma Buholegal), donde el expediente aparece registrado en el Juzgado 25 de lo Familiar con cero acuerdos publicados a la fecha. La nota oficial del sistema indica de manera literal: <em>"Actualmente, Buholegal no registra acuerdos para este expediente"</em>.</p>
         <p>Esta circunstancia es procesalmente normal y esperada. Conforme a la práctica del foro y a la carga ordinaria del Juzgado, el primer acuerdo del Juez —que típicamente admite la denuncia, tiene por presentado al promovente, reconoce a los abogados autorizados, ordena la formación del expediente y dispone los pasos iniciales— suele emitirse entre 7 y 14 días hábiles a partir del cargo. En el presente caso, el primer pronunciamiento se espera entre el 15 y el 22 de mayo de 2026.</p>
         <p>Mientras tanto, se ha establecido un sistema de monitoreo automatizado del expediente que consulta la plataforma judicial cada 48 horas y notifica de inmediato cualquier publicación, lo cual permite reaccionar a cualquier proveído del Juez en tiempo real.</p>
       </div>
@@ -1110,8 +1110,8 @@ function buildPrintable() {
         </div>
       </div>
       <div class="pstage-body">
-        <p>El presente dictamen ha desglosado, en sus partes técnicas, fácticas y procesales, el estado integral del expediente 292/2026 al día ${today}. El expediente se encuentra correctamente radicado ante autoridad competente, la denuncia se presentó dentro del plazo razonable a partir del fallecimiento de los autores de la sucesión, los anexos necesarios fueron entregados a la Oficialía y el procedimiento ha avanzado hasta la segunda de las catorce etapas planeadas.</p>
-        <p>Al día de hoy, la única acción procesal pendiente del lado del promovente y de su representación es la espera del primer pronunciamiento jurisdiccional, el cual, conforme a los plazos ordinarios del Juzgado Octavo de lo Familiar, se espera emitir entre el 15 y el 22 de mayo de 2026. No se requiere, en este momento procesal, ninguna gestión adicional por parte del cliente.</p>
+        <p>El presente dictamen ha desglosado, en sus partes técnicas, fácticas y procesales, el estado integral del expediente 334/2026 al día ${today}. El expediente se encuentra correctamente radicado ante autoridad competente, la denuncia se presentó dentro del plazo razonable a partir del fallecimiento de los autores de la sucesión, los anexos necesarios fueron entregados a la Oficialía y el procedimiento ha avanzado hasta la segunda de las catorce etapas planeadas.</p>
+        <p>Al día de hoy, la única acción procesal pendiente del lado del promovente y de su representación es la espera del primer pronunciamiento jurisdiccional, el cual, conforme a los plazos ordinarios del Juzgado Vigésimo Quinto de lo Familiar, se espera emitir entre el 15 y el 22 de mayo de 2026. No se requiere, en este momento procesal, ninguna gestión adicional por parte del cliente.</p>
         <p>Cualquier publicación que aparezca en el Boletín Judicial será detectada automáticamente por el sistema de monitoreo y se procederá a generar la respuesta procesal correspondiente con prontitud. Este dictamen se actualizará en cada momento relevante del juicio.</p>
         <p>Se acompaña, como cuerpo final del documento, la sección de Anexos, en la que se reproducen las constancias del Registro Civil, identificaciones oficiales y capturas del sistema judicial que respaldan el procedimiento.</p>
       </div>
@@ -1133,7 +1133,7 @@ document.getElementById('btnPrintBig').addEventListener('click', async () => {
   Array.from(document.styleSheets).forEach(s => { try { Array.from(s.cssRules).forEach(r => { if (r.media && r.media.mediaText && r.media.mediaText.indexOf('print') >= 0) { Array.from(r.cssRules).forEach(inner => { if (inner.selectorText && (inner.selectorText.indexOf('printable') >= 0 || inner.selectorText.indexOf('pcover') >= 0 || inner.selectorText.indexOf('pstage') >= 0 || inner.selectorText.indexOf('panexo') >= 0 || inner.selectorText.indexOf('pstatus') >= 0 || inner.selectorText.indexOf('ptoc') >= 0 || inner.selectorText.indexOf('pfoot') >= 0)) { styleRules.push(inner.cssText); } }); } }); } catch (e) {} });
   const cleanedRules = styleRules.join('\n').replace(/#printable /g, '').replace(/#printable\s*\{/g, 'body{');
   const css = '@page{size:A4;margin:18mm 16mm}html,body{margin:0;padding:0;background:#fff;color:#1a1a1a;font-family:Georgia,"Times New Roman",serif}.pcover{page-break-after:always;break-after:page;padding:30pt 0 0}.pstage{page-break-before:always;break-before:page;padding:0}.panexo-block{page-break-before:always;break-before:page}' + cleanedRules;
-  const html = '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Dictamen 292/2026</title><style>' + css + '</style></head><body>' + printableHTML + '<scr'+'ipt>window.onload=function(){setTimeout(function(){window.print();},700);};</scr'+'ipt></body></html>';
+  const html = '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>Dictamen 334/2026</title><style>' + css + '</style></head><body>' + printableHTML + '<scr'+'ipt>window.onload=function(){setTimeout(function(){window.print();},700);};</scr'+'ipt></body></html>';
   const w = window.open('', '_blank', 'width=900,height=700');
   if (!w) { alert('Permite ventanas emergentes para descargar el PDF.'); return; }
   w.document.open();
